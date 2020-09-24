@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    border-bottom: 3px solid cyan;
+    margin-right: 40px;
+}
+#header .header{
+    min-height: 8vh;
+    background-color: #29323c;
+}
+#header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+.brand h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+.brand h1 a span{
+    color: crimson;
+}
+#header .hamburger{
+    height: 30px;
+    width: 30px;
+    top: 3px;
+    z-index: 100;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 50%;
+}
+#header .hamburger .bar{
+    height: 2px;
+    width: 21px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+#header .hamburger .bar::before{
+    bottom: 7px;
+}
+#header .hamburger .bar::after,
+#header .hamburger .bar::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease 0s;
+}
+#header .hamburger .bar::after{
+    top: 7px;
+}
+#header .hamburger .bar::before,
+#header .hamburger .bar::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease 0s;
+}
+#header .nav-list ul{
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    width: 100vw;
+    height: 80vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    list-style: none;
+    transition: right 0.5s ease 0;
+}
+/* end of header */
+
+
+
+
