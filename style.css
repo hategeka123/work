@@ -79,6 +79,7 @@ p{
     top: 0;
     width: 100vw;
     height: auto;
+    border-bottom: 3px solid cyan;
 }
 #header .header{
     min-height: 8vh;
@@ -114,6 +115,9 @@ p{
 #header .nav-list ul.active{
     left: 0;
 }
+#header .nav-list ul a.active-link{
+    color: brown;
+}
 #header .nav-list ul a{
     font-size: 2.5rem;
     font-weight: 500;
@@ -126,18 +130,19 @@ p{
 #header .nav-list ul a::after {
     content: attr(data-after);
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%) scale(0);
     color: rgba(240, 248, 255, 0.024);
     font-size: 13rem;
     letter-spacing: 50px;
     z-index: -1;
+    transition: .3s ease letter-spacing;
 }
 #header .nav-list ul li:hover a::after{
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
-    transition: .3s ease letter-spacing;  
+      
 }
 #header .nav-list ul li:hover a{
     color: crimson;
@@ -201,7 +206,7 @@ p{
 
 /* hero section */
 #hero{
-    background-image: url(./image/home.png);
+    background-image: url(./image/IMG-20200324-WA0003.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -332,7 +337,7 @@ p{
 }
 /* End project section */
 /* skills section */
-#skills .skills{
+#skills .flexbox {
     flex-direction: column;
     display: flex;
     max-width: 1500px;
@@ -341,29 +346,139 @@ p{
     left: 0;
     justify-content: center;
     align-items: center;
-    background-color: #fdf9f9;
+    /* background-color: #FDF9F9; */
 }
-#skills .skills .section-title{
-    margin-top: 40px;
-}
-#skills .skills .section-title h1{
-    font-size: 3rem;
-    font-weight: 100;
-    margin-top: 40px;
-    margin-bottom: 12px;
+#skills .flexbox .skill-title {
     text-align: center;
     color: blue;
+    font-size: 2rem;
+    position: relative;
 }
-
-#skills .skills .pragra p{
-    font-size: 3rem;
-    margin: 30px;
-    justify-content: space-between;
+#skills .flexbox span {
+    text-align: center;
+    margin-top: 10px;
+    width: 10%;
+    background-color: cyan;
+    margin-left: 8px;
+    border: 2px solid cyan;
+}
+#skills .flexbox .flex-skills {
+    align-items: center;
+    margin: 10px;
+}
+#skills .flexbox .flex-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    grid-column-gap: 10px;
+}
+#skills .flexbox .exper-title {
+    text-align: center;
+    font-size: 2rem;
+    color: blue;
+    position: relative;
+    margin-bottom: 30px;
+    border-bottom: 2px solid cyan;
+}
+#skills .flexbox .flex-my-experience {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 90%;
+    padding: 20px;
+    margin-left: -25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 20%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ECE9E9;
+    box-shadow: #EFEBEB;
+}
+#skills .flexbox .flex-my-experience .flex-exper-item {
+    width: 27vw;
+    height: 300px;
+}
+#skills .flexbox .flex-my-experience .flex-exper-item img {
+    width: 350px;
+    height: 180px;
+}
+#skills .flexbox .flex-my-experience .flex-exper-item p {
+    font-size: 1.3rem;
+    margin-left: -3px;
+}
+#skills .flexbox .flex-my-experience .flex-exper-item {
+    width: 27vw;
+    height: 300px;
+}
+#skills .flexbox .flex-my-experience .flex-exper-item img {
+    width: 350px;
+    height: 180px;
+}
+#skills .flexbox .flex-my-experience p {
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+#skills .flexbox .flex-my-experience .flex-exper-item p {
+    font-size: 1.3rem;
+    margin-left: -3px;
+}
+#skills .flexbox .flex-my-experience p {
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+#skills .flexbox .flex-my-experience .flex-exper-item {
+    width: 27vw;
+    height: 300px;
+}
+#skills .flexbox .flex-my-experience .flex-exper-item img {
+    width: 350px;
+    height: 180px;
+}
+#skills .flexbox .flex-my-experience .flex-exper-item p {
+    font-size: 1.3rem;
+    margin-left: -3px;
+}
+#skills .flexbox .flex-my-experience p {
+    font-size: 1.2rem;
+    margin-left: 30px;
 }
 /* End skills section */
 
 /* proj section  */
-
+.title h1 {
+    text-align: center;
+    color: blue;
+    font-size: 1.7rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.flexbox-project {
+    display: grid;
+    grid-template-columns: 6rem;
+    grid-row-gap: 1.2rem;
+    grid-column-gap: 1.2rem;
+    margin-left: 5vw;
+}
+.flexbox-project .flexbox-project-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px 2px #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80vw;
+    height: 320px;
+    transition: .6s ease;
+}
+.flexbox-project .flexbox-project-item img {
+    /* width: ;
+    height: 200px; */
+}
+.flexbox-project .flexbox-project-item p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* End proj section  */
 
 /* contact section */
@@ -481,6 +596,7 @@ p{
 /* end @keyframes for tablet */
 /* @media query */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
+
     .cta{
         font-size: 2.5rem;
         padding: 20px 60px;

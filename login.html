@@ -12,50 +12,56 @@
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
-                    <h1><a href="#hero">
-                        <span>J.</span> <span>M</span>arie
-                    </a></h1>
+                    <a href="#hero"><h1><span>J.</span><span>M</span>arie</h1></a>
                 </div>
                 <div class="nav-list">
                     <div class="hamburger"><div class="bar"></div></div>
                     <ul>
                         <li><a href="./index.html" data-after="Home">Home</a></li>
-                        <li><a href="./blog.html" data-after="Blog">Blog</a></li>
-                        <li><a href="#" class="active-link" data-after="Login">Login</a></li>
+                        <!-- <li><a href="#projects" data-after="Home">About</a></li>
+                        <li><a href="#skills" data-after="Home">Skills</a></li>
+                        <li><a href="#proj" data-after="Home">Projects</a></li>
+                        <li><a href="#contact" data-after="Home">Contact</a></li> -->
+                        <li><a href="./blog.html" data-after="blog">Blog</a></li>
+                        <li><a href="./login.html" data-after="login">Login</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <div class="container-l">
+    
+    <!-- end header section   -->
+    <div class="container-l">
         <div class="image">
-            <img class="avatar" src="./image/download.jpg" alt>
-        </div> -->
-        <!-- <div class="login-container">
-            <form id="logn-form">
+            <img class="avetar" src="./image/about.png" alt>
+        </div>
+        <div class="login-container">
+            <form id="login-form">
                 <h2>WellCome</h2>
-                <div class="input-div one">
+                <div class="input_div one">
                     <div class="i">
                         <i class="fas fa-user" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h5>email</h5>
+                        <h5>Email</h5>
                         <input type="text" class="input" name="email" id="email" required>
                     </div>
+                    
                 </div>
-                <div class="input-div two">
+                <div class="input_div two">
                     <div class="i">
-                        <i class="fas fa-user" aria-hidden="true"></i>
+                        <i class="fas fa-lock" aria-hidden="true"></i>
+
                     </div>
                     <div>
-                        <h5>password</h5>
-                        <input type="text" class="input" name="password" id="password" required>
-                    </div>
+                        <h5>Password</h5>
+                        <input type="password" class="input" name="password" id="password" required>
+                    </div>  
                 </div>
-                <button type="Submit" class="btn">Login</button>
-            </form>
+                <button type="submit" class="btn">Login</button>
+            </form>   
         </div>
-    </div> -->
-    <!-- end header section   -->
+    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
