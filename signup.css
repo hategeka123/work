@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=montserrat:300,400,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=montserrat:300,400,700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -73,10 +73,10 @@ p{
 }
 .brand h1 span{
     color: crimson;
-}
+} */
 
 /* header section */
-#header{
+/* #header{
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -115,9 +115,6 @@ p{
     z-index: 1;
     overflow: hidden;
     transition: .5s ease left;
-}
-#header .nav-list ul li a.active-link{
-    color: brown;
 }
 #header .nav-list ul.active{
     left: 0;
@@ -203,51 +200,121 @@ p{
 }
 #header .hamburger.active .bar::after{
     top: 0;
+} */
+/* ende of header */
+body{
+    background-color: gray;
 }
- /* end of header */
- .title h1 {
-    text-align: center;
-    color: blue;
-    margin-top: 12vh;
-    margin-bottom: 25px;
-}
-.flexbox-blog {
-    display: flex;
-    flex-direction: row;
-    margin-left: 20%;
-    margin-right: 10%;
-    flex-wrap: wrap;
-}
-.flexbox-blog .flexbox-blog-item {
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-   height: 400px;
-   width: 350px;
-   border-radius: 15px;
-   box-shadow: 2px 0px 15px green;
-   background-color: white;
-   margin-right: 50px;
-   margin-top: 50px;
-
+    /* justify-content: center; */
+    /* align-items: center; */
 }
-.flexbox-blog .flexbox-blog-item img {
-    width: 200px;
-    height: 150px;
-    /* margin: auto; */
-    align-self: center;
-    padding-top: 20px;
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 20px; */
 }
-.flexbox-blog .flexbox-blog-item p {
-    font-size: 1.4rem;
-    margin-top: 5px;
-    margin-bottom: 20px;
+.content-container {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.signin-btn-wrapper {
+    width: 40%;
+    align-items: center;
+}
+.signin-btn-wrapper button {
+    width: 50%;
     padding: 10px;
+    border-radius: 20px 20px;
+    border-width: 0px;
+    background-color: green;
+    color: #ffff;
+    font-size: 16px;
+    margin-top: 50%;
+    margin-left: 25%;
 }
-.flexbox-blog .flexbox-blog-item h3{
-    padding: 20px 10px 5px 20px;
+.signup-form-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 20px 20px;
+    background: black
 }
- /* key frame */
- @keyframes hamburger_puls{
+form {
+    width: 90%;
+}
+.input-wrapper {
+    width: 100%;
+    margin-top: 1em;
+}
+form label {
+    display: block;
+}
+form input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 20px 20px;
+    border-width: 0px;
+}
+.input-wrapper {
+    width: 100%;
+    margin-top: 1em;
+}
+form label {
+    display: block;
+}
+form input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 20px 20px;
+    border-width: 0px;
+}
+.input-wrapper {
+    width: 100%;
+    margin-top: 1em;
+}
+form label {
+    display: block;
+}
+form input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 20px 20px;
+    border-width: 0px;
+}
+.input-wrapper {
+    width: 100%;
+    margin-top: 1em;
+}
+form label {
+    display: block;
+}
+.input-wrapper {
+    width: 100%;
+    margin-top: 1em;
+}
+form button {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px 20px;
+    border-width: 0px;
+    background-color: green;
+    color: #ffff;
+    font-size: 16px;
+    margin-left: 25%;
+    margin-top: 1.2em;
+}
+/* @keyframes hamburger_puls{
     0%{
         opacity: 1;
         transform: scale(1);
@@ -257,33 +324,24 @@ p{
         transform: scale(1.4);
     }
 }
-  /* end key frame */
-/* media query */
-  @media only screen and (min-width: 1200px) {
-    #header .hamburger{
-        display: none;
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
     }
-    #header .nav-list ul{
-        position: initial;
-        display: block;
-        height: auto;
-        width: fit-content;
-        background-color: transparent;
-    }
-    #header .nav-list ul li{
-        display: inline-block;
-    }
-    #header .nav-list ul li{
-        font-size: 1.8rem;
-    }
-    #header .nav-list ul a::after{
-        display: none;
+    100%{
+        width: 0;
+        left: 100%;
     }
 }
-/* end media query */ 
-
-
-
-
-
-
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: yellow;
+        font-weight: 500;
+    }
+} */

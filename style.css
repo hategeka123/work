@@ -8,6 +8,10 @@ html{
     font-size: 10px;
     font-family: 'montserrat', sans-serif;
 }
+body{
+    display: flex;
+    flex-direction: column;
+}
 a{
     text-decoration: none;
 }
@@ -49,7 +53,7 @@ p{
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid crimson;
+    border: 3px solid crimson;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -79,6 +83,7 @@ p{
     top: 0;
     width: 100vw;
     height: auto;
+    background-color: rgb(31, 30, 30);
     border-bottom: 3px solid cyan;
 }
 #header .header{
@@ -86,6 +91,7 @@ p{
     width: 100%;
     background-color: rgba(31, 30, 30, 0.24);
     transition: .3s ease background-color;
+    z-index: 500;
 }
 #header .nav-bar{
     display: flex;
@@ -108,14 +114,14 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 150;
     overflow: hidden;
     transition: .5s ease left;
 }
 #header .nav-list ul.active{
     left: 0;
 }
-#header .nav-list ul a.active-link{
+#header .nav-list ul li a.active-link{
     color: brown;
 }
 #header .nav-list ul a{
@@ -126,6 +132,7 @@ p{
     color: white;
     padding: 20px;
     display: block;
+    z-index: 1;
 }
 #header .nav-list ul a::after {
     content: attr(data-after);
@@ -206,12 +213,15 @@ p{
 
 /* hero section */
 #hero{
-    background-image: url(./image/IMG-20200324-WA0003.jpg);
+    display: flex;
     background-size: cover;
     background-position: top center;
     position: relative;
-    z-index: 1;
+    z-index: -1;
+    /* background-color: black; */
+    padding: 10px;
 }
+
 #hero::after{
     content: '';
     position: absolute;
@@ -223,11 +233,16 @@ p{
     opacity: .7;
     z-index: -1;
 }
-#hero .hero{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 50px;
-    justify-content: flex-start;
+#hero .image img{
+    margin-top: 80px;
+    /* height: 100%;
+    width: 100%; */
+}
+#hero .info{
+    width: 100%;
+    /* z-index: 1; */
+    margin-left: 20%
+    /* float: right; */
 }
 #hero h1{
     display: block;
@@ -482,56 +497,69 @@ p{
 /* End proj section  */
 
 /* contact section */
+
 #contact .contacts {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     position: relative;
     background-color: #494234;
     color: white;
 }
+
 #contact .contacts h1{
     padding-top: 50px;
     text-align: center;
     margin-top: 50px;
     font-size: 4rem;
 }
-#contact .contacts .address {
+.contact-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.contacts .address {
     width: 80vw;
     padding: 20px;
     text-align: center;
 }
-#contact .contacts .address h3{
+.contacts .address h3{
     font-size: 3rem;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-#cantact .contacts .address p{
-    font-size: rem;
+.contacts .address p{
+    font-size: 2rem;
+    font-weight: bold;
 }
-#contact .contacts .contact-form {
+.contacts .contact-form {
     padding: 30px;
     transition: .7s ease right;
     text-align: center;
 }
-#contact .contacts .contact-form h3{
+.contacts .contact-form h3{
     color: cyan;
+    font-size: 20px;
 }
-#contact .contacts .contact-form form{
+
+.contacts .contact-form form{
     padding: 30px;
     margin-top: 30px;
     background-color: #0d0300;
     border-radius: 10px;
-    height: fit-content;
-    text-align: left;
+    height: fit-content; 
+     text-align: left;
 }
-#contact .contacts .contact-form input{
-    width: 73vw;
+.contacts .contact-form input{
+    width: 53vw;
     height: 5vh;
     border-radius: 5px;
     border: none;
     border-bottom: 1px solid #cccccc;
 }
-#contact .contacts .contact-form form textarea{
-    width: 73vw;
+.contacts .contact-form form textarea{
+    width: 53vw;
 }
 #contact .contacts .contact-form form button{
     padding: 10px;
@@ -541,6 +569,12 @@ p{
     border: 2px solid white;
     color: white;
     transition: .6s ease;
+}
+#contact-form label{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 18px;
 }
 .contact-social-media {
     background-color: #0d0300;
@@ -606,8 +640,15 @@ p{
     }
 
     /* hero */
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
     #hreo h1{
         font-size: 7rem;
+    }
+    #hero .hero{
+        height: 60px;
     }
      /* end hero */
      /* projects */
@@ -675,6 +716,13 @@ p{
          margin-top: 60px;
      }
      /* end proj */
+     /* contact */
+     .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+    
+    }
+     /* end contact */
 }
 /* for desktop */
 @media only screen and (min-width: 1200px) {
@@ -691,12 +739,14 @@ p{
     #header .nav-list ul li{
         display: inline-block;
     }
-    #header .nav-list ul li{
+    #header .nav-list ul li{ 
         font-size: 1.8rem;
     }
     #header .nav-list ul a::after{
         display: none;
     }
+
 }
+
 /* for desktop */
 /* end @media query */

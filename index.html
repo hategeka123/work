@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="header.css"> -->
     <link rel="stylesheet" href="style.css">
     <title>My Website</title>
 </head>
@@ -16,11 +17,11 @@
                 </div>
                 <div class="nav-list">
                     <div class="hamburger"><div class="bar"></div></div>
-                    <ul>
-                        <li><a href="#hero" data-after="Home" class="active-link" style="color:brown; border-bottom: 2px solid brown;">Home</a></li>
-                        <li><a href="#projects" data-after="About" style="color: white; border-bottom: none;">About</a></li>
-                        <li><a href="#skills" data-after="Skills">Skills</a></li>
-                        <li><a href="#proj" data-after="Projects">Projects</a></li>
+                    <ul class="nav_link">
+                        <li><a href="#hero" data-after="Home" class="active-link">Home</a></li>
+                        <li><a href="#projects" data-after="About">About</a></li>
+                        <!-- <li><a href="#skills" data-after="Skills">Skills</a></li> -->
+                        <!-- <li><a href="#proj" data-after="Projects">Projects</a></li> -->
                         <li><a href="#contact" data-after="Contact">Contact</a></li>
                         <li><a href="./blog.html" data-after="Blog">Blog</a></li>
                         <li><a href="./login.html" data-after="Login">Login</a></li>
@@ -33,11 +34,14 @@
     <!-- hero section -->
     <section id="hero">
         <div class="hero container">
-            <div>
+            <div class="info">
                 <h1>Hello, <span></span></h1>
                 <h1>My Name Is <span></span></h1>
                 <h1>J.Marie <span></span></h1>
-                <a href="#skills" type="button" class="cta">My skills</a>
+                <!-- <a href="./blog.html" type="button" class="cta">View my blog</a> -->
+            </div>
+            <div class="image">
+                <img src="./image/jmv.jpg" alt="profile image"> 
             </div>
         </div>
     </section>
@@ -55,12 +59,12 @@
                 <p>"I’m also postgraduate in" <span>Information System</span>.</p>
                 <p>Know many things about me, Look!</p>    
             </div>
-            <a href="#proj" type="button" class="btn">View My work</a>
+            <!-- <a href="#proj" type="button" class="btn">View My work</a> -->
         </div>
     </section>
     <!-- end about section -->
     <!-- skills section -->
-    <section id="skills">
+    <!-- <section id="skills">
         <div class="flexbox container">
                  <h1 class="skill-title">Skills</h1>
                  <span></span>
@@ -102,10 +106,10 @@
                         
                </div>
        </div>
-    </section>
+    </section> -->
     <!-- end skills section -->
     <!-- project section -->
-    <section id="proj">
+    <!-- <section id="proj">
         <div class="title"><h1>My Work</h1></div>
      <div class="flexbox-project">
     <div class="flexbox-project-item">
@@ -113,13 +117,13 @@
     <a href="#"><h2>Look my acheivements from hard work</h2></a>
   <p>Here this my certificate that i achieved when icomplete all requirement in short training (python)</p> 
 </div>
-    
+     -->
     <!-- <div class="flexbox-project-item">
     <img src="" alt="ur.PNG">
     <a href="#"><h2>Final Year Project Monitoring</h2></a>
   <p>The student who are in process of writting projects' book and projects' implementations they submit all of those on this platform like : books and the link of hosted systems implementation.</p> 
 </div> -->
-    </div>
+    <!-- </div> -->
 
 </section>>
     <!-- project section -->
@@ -149,33 +153,27 @@
                 </div>
                 <div class="contact-form">
                     <h3>Have question or any support contact me</h3>
-                    <form method="POST" id="cantact-form">
-                        <label for="fname">Name</label>
-                        <br>
+                    <form method="POST" id="contact-form">
+                        <label for="fname">Name
                         <input type="text" id="fname" name="fname" value required>
-                        <br>
-                        <br>
-                        <label for="lname">Email</label>
-                        <br>
+                        </label>
+                        <label for="lname">Email
                         <input type="email" id="email" name="email" value required>
-                        <br>
-                        <br>
-                        <label for="lname">Description</label>
-                        <br>
+                        </label>
+                        <label for="lname">Descriptio 
                         <textarea id="description" name="description"  value rows="10" value cols="50" required></textarea>
-                        <br>
-                        <br>
+                        </label>
                         <button type="Submit">SUBMIT</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="contact-social-media">
-            <img src="image/link.png">
-            <img src="image/twitter.png">
-            <img src="image/facebook (2).png">
-            <img src="image/istag.jpg">
-            <img src="image/wh.jpg">
+            <a href="#"><img src="image/link.png"></a>
+            <a href="#"><img src="image/twitter.png"></a>
+            <a href="https://web.facebook.com/hategeka.jmvianney/"><img src="image/facebook (2).png"></a>
+            <a href=""><img src="image/istag.jpg"></a>
+            <a href=""><img src="image/wh.jpg"></a>
         </div>
         <div class="social-media">
             

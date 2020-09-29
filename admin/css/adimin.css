@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=montserrat:300,400,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: hidden; */
+}
+.admin-wrapper{
+    /* margin-top: 71px; */
+    display: flex;
+    flex-direction: row;
+}
+.admin-wrapper .left-sidebar{
+    padding-top: 100px;
+    height: 1000px;
+    width: 250px;
+    background-color: gray
+}
+.admin-wrapper .left-sidebar ul{
+    /* padding-top: 10px; */
+    list-style: none;
+    font-size: 2rem;
+    color: aliceblue;
+}
+.admin-wrapper .left-sidebar ul li a{
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid darkgrey;
+}
+.admin-wrapper .left-sidebar ul li a:hover{
+    background: darkgrey;
+}
+.admin-wrapper .admin-content{
+    padding-top: 100px;
+    padding-left: 40px;
+    height: 1000x;
+    width: 100%;
+    right: 0;
+    overflow-y: scroll;
+}
+.btn{
+    padding-top: 10px;
+    margin-top: 15px;
+    width: 100px;
+    font-size: 2rem;
+    background-color: gray;
+    /* margin-left: 10px; */
+    /* border-radius: 2px; */
+}
+.btn:hover{
+    background-color: cornsilk;
+}
+.content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.admin-content .page-title{
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 2rem;
+}
+th, td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+.edit{
+    color: green;
+}
+.delete{
+    color: red;
+}
+.publish{
+    color: blue;
+}
+
+.edit:hover,
+.delete:hover,
+.publish:hover{
+    text-decoration: underline;
+}
+form{
+    margin: 30px;
+    box-sizing: border-box;
+    /* background-color: gray; */
+}
+.title input{
+    height: 50px;
+    width: 400px;
+    margin-bottom: 20px; 
+}
+.image input{
+    margin-bottom: 20px;
+}
+label{
+    font-size: 2rem;
+}
+textarea{
+    width: 400px;
+    height: 200px;
+    /* background: linear-gradient(18edeg, #5bea, #ffc0);
+    box-shadow: 0 0 20px 4px #303030; */
+    resize: none;
+    /* margin-top: 3%; */
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px; 
+}
+.input-wrapper {
+    width: 100%;
+    margin-top: 1em;
+    ;
+}
+form label {
+    display: block;
+    
+}
+form input {
+    width: 100%;
+    padding: 13px;
+    /* border-radius: 20px 20px; */
+    border-width: 0px;
+    background-color: darkgrey;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comment.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header section -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero"><h1><span>J.</span><span>M</span>arie</h1></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <!-- <li><a href="./index.html" data-after="Home">Home</a></li> -->
+                        <!-- <li><a href="#projects" data-after="Home">About</a></li>
+                        <li><a href="#skills" data-after="Home">Skills</a></li>
+                        <li><a href="#proj" data-after="Home">Projects</a></li>
+                        <li><a href="#contact" data-after="Home">Contact</a></li> -->
+                        <li><a href="./blog.html" data-after="Home">Blog</a></li>
+                        <li><a href="#" data-after="Home" class="active-link">Coments</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <!-- end header section    -->
+    <div class="container">
+        <form action="">
+            <div class="form">
+                <h2>Send Feedback</h2>
+                <div class="user">
+                    <input type="email" placeholder="Enter your Email">
+                </div>
+                <div class="username">
+                    <input type="text" placeholder="Enter Username">
+                </div>
+                <textarea placeholder="Enter Massege"></textarea>
+                <div class="rating">
+                    <input type="radio" name="omoji" id="omoji1" checked>
+                    <label for="omoji">
+                        <img src="./image/omoji.jpg" title="satisfactory">
+                        <h4>Satisfactory</h4>
+                    </label>
+                    <input type="radio" name="omoji" id="omoji2">
+                    <label for="omoji2">
+                        <img src="./image/omoji.jpg" title="Happy">
+                        <h4>Happy</h4>
+                    </label>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
