@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/adimin.css">
+    <title>Admini Part</title>
+</head>
+<body>
+     <!-- header -->
+     <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="."><h1><span>J.</span><span>M</span>arie</h1></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <!-- <li><a href="./index.html" data-after="Home">Home</a></li>
+                        <li><a href="#projects" data-after="About">About</a></li>
+                        <li><a href="#skills" data-after="Skills">Skills</a></li>
+                        <li><a href="#proj" data-after="Projects">Projects</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                        <li><a href="./blog.html" data-after="Blog">Blog</a></li> -->
+                        <li><a href="#" data-after="Login">@Adim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end header -->
+    <!-- admin page wraper -->
+    <div class="admin-wrapper">
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <ul>
+                <li><a href="../posts/index.html">Manage Posts</a></li>
+                <li><a href="../users/index.html">Manage Users</a></li>
+                <li><a href="index.html">Manage Topics</a></li>
+            </ul>
+        </div>
+        <!-- end left-sidebar -->
+
+        <!-- admin-content -->
+        <div class="admin-content">
+            <div class="button-group">
+                <a href="create.html" class="btn btn-big">Add Topics</a>
+                <a href="index.html" class="btn btn-big">Manage Topics</a>
+            </div>
+
+            <div class="content">
+                <h2 class="page-title">Add Topics</h2>
+                <form action="create.html" method="post">
+                    <div class="title">
+                        <label>Title</label><br>
+                        <input type="text" name="title" class="text-input"><br>
+                    </div>
+                    <!-- <div class="image">
+                        <label>Select image:</label><br>
+                        <input type="file" id="img" name="img" accept="image/*"><br>
+                    </div> -->
+                    <div class="description">
+                        <label>Description</label><br>
+                        <textarea placeholder="Enter Massege"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-big">Add Topic</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end admin-content -->
+    </div>
+    <!-- end admin page wraper -->
+    <script src="../../app.js"></script>
+</body>
+</html>
