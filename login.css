@@ -7,7 +7,7 @@
 body{
     background-color: gray;
     padding-top: 15vh;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 html{
     font-size: 10px;
@@ -84,6 +84,7 @@ p{
     top: 0;
     width: 100vw;
     height: auto;
+    background-color: rgb(31, 30, 30);
     border-bottom: 3px solid cyan;
 }
 #header .header{
@@ -210,6 +211,7 @@ p{
     display: flex;
     flex-direction: row;
     height: 100vh;
+    margin-bottom: 0px;
     /* position: relative; */
     /* background-color: #494234; */
     color: white;
@@ -231,7 +233,7 @@ p{
     width: 100px;
 }
 .login-container {
-    padding: 20px 0;
+    padding: 10px 0;
     margin-top: 0%;
     margin-right: 20%;
     display: flex;
@@ -243,7 +245,7 @@ form {
     margin-right: 10px;
     margin: auto;
     border-radius: 25px 25px;
-    background: white;
+    background: whitesmoke;
     justify-content: space-around;
     /* margin-bottom: 50px; */
 }
@@ -264,6 +266,15 @@ form h2 {
     padding: 5px 0;
     border-bottom: 2px solid #d9d9d9;
 }
+.login_container {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.input_div.focus::after, .input_div.focus::before {
+    width: 50%;
+}
 .input_div::before {
     left: 50%;
 }
@@ -275,44 +286,8 @@ form h2 {
     height: 2px;
     background-color: #38d39f;
 }
-.input_div > div {
-    position: relative;
-    height: 45px;
-}
-/* .i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-/* .i i {
-    color: #d9d9d9;
-    transition: .3s;
-} */
-/* .fa, .fas {
-    font-weight: 900;
-} */
-.input_div > div h5 {
-    position: absolute;
-    left: 30px;
-    top: 30%;
-    transform: translate(-30%);
-    color: #999;
-    /* display: none; */
-    font-size: 18px;
-    transition: .3s;
-}
-.input {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: none;
-    outline: none;
-    background: none;
-    padding: 0.5rem 0.7rem;
-    font-size: 1.2rem;
-    color: #555;
+.input_div.focus::after, .input_div.focus::before {
+    width: 50%;
 }
 .input_div::after {
     right: 50%;
@@ -429,6 +404,29 @@ form h2 {
 }
   /* end key frame */
 /* media query */
+@media only screen and (max-width: 768px){
+    .container-l{
+        display: flex;
+        flex-direction: column;
+    }
+    .image img{
+        height: 35vh;
+        width: 45vw;
+    }
+   form{
+       margin-bottom: 100px;
+       margin-left: 125px;
+   }
+   div.h5{
+       font-size: 1.9rem;
+       font-weight: bold;
+   }
+   .btn{
+       font-weight: bold;
+       font-size: 1.9rem;
+   }
+
+}
   @media only screen and (min-width: 1200px) {
     #header .hamburger{
         display: none;

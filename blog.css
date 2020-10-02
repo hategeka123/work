@@ -83,6 +83,7 @@ p{
     top: 0;
     width: 100vw;
     height: auto;
+    background-color: rgb(31, 30, 30);
     border-bottom: 3px solid cyan;
 }
 #header .header{
@@ -208,8 +209,8 @@ p{
  .title h1 {
     text-align: center;
     color: blue;
-    margin-top: 12vh;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    font-size: 4rem;
 }
 .flexbox-blog {
     display: flex;
@@ -221,7 +222,7 @@ p{
 .flexbox-blog .flexbox-blog-item {
     display: flex;
     flex-direction: column;
-   height: 400px;
+   height: 550px;
    width: 350px;
    border-radius: 15px;
    box-shadow: 2px 0px 15px green;
@@ -233,18 +234,20 @@ p{
 .flexbox-blog .flexbox-blog-item img {
     width: 200px;
     height: 150px;
-    /* margin: auto; */
     align-self: center;
     padding-top: 20px;
 }
 .flexbox-blog .flexbox-blog-item p {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-top: 5px;
     margin-bottom: 20px;
     padding: 10px;
+    font-weight: bold;
 }
 .flexbox-blog .flexbox-blog-item h3{
     padding: 20px 10px 5px 20px;
+    text-decoration: underline;
+    font-weight: bold;
 }
  /* key frame */
  @keyframes hamburger_puls{
@@ -259,6 +262,17 @@ p{
 }
   /* end key frame */
 /* media query */
+@media only screen and (max-width: 768px){
+    .flexbox-blog .flexbox-blog-item{
+        height: 600px;
+    }
+    .flexbox-blog .flexbox-blog-item p{
+        font-size: 2.1rem;
+    }
+    .flexbox-blog .flexbox-blog-item h3{
+        font-size: 3rem;
+    }
+}
   @media only screen and (min-width: 1200px) {
     #header .hamburger{
         display: none;
