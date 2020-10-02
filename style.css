@@ -233,11 +233,12 @@ p{
     opacity: .7;
     z-index: -1;
 }
-#hero .image img{
-    margin-top: 80px;
+/* #hero .image img{
+    padding: 10px;
+    margin-top: 150px;
     /* height: 100%;
     width: 100%; */
-}
+/* } */ */
 #hero .info{
     width: 100%;
     /* z-index: 1; */
@@ -629,13 +630,13 @@ p{
 }
 /* end @keyframes for tablet */
 /* @media query */
-@media only screen and (max-width: 768px) and (min-width: 481px) {
+@media only screen and (max-width: 768px){
 
     .cta{
         font-size: 2.5rem;
         padding: 20px 60px;
     }
-    h1.section-title{
+    .section-title h1{
         font-size: 6rem;
     }
 
@@ -643,12 +644,15 @@ p{
     .hero{
         display: flex;
         flex-direction: column;
+        padding-top: 75%;
     }
-    #hreo h1{
-        font-size: 7rem;
+    #hero h1{
+        display: block;
+        font-size: 3rem;
     }
     #hero .hero{
-        height: 60px;
+        height: 80px;
+        /* width: 75px; */
     }
      /* end hero */
      /* projects */
@@ -656,9 +660,11 @@ p{
          max-height: 70vh;
          background-color: #eeeeee;
      }
+     .projects{
+         padding-top: 50%;
+     }
      #projects .projects{
          height: 100%;
-         /* margin-top: 10%; */
          max-height: 80vh;
      }
      #projects .projects .section-title h1{
@@ -690,32 +696,7 @@ p{
          margin-left: 5vw;
      }
      /* end projects */
-     /* skills */
-     #skills{
-         min-height: 100vh;
-         /* margin-bottom: 500px; */
-     }
-     #skills .skills{
-         margin-left: 0px;
-         width: 90vw;
-     }
-     #skills .skills .skill-title{
-         text-align: center;
-         font-size: 4rem;
-         position: relative;
 
-     }
-     #skills .pragra {
-         margin-top: -3vh;
-         height: 30vh;
-     }
-     /* end skills */
-
-     /* proj */
-     #proj {
-         margin-top: 60px;
-     }
-     /* end proj */
      /* contact */
      .contact-wrapper{
         display: flex;
