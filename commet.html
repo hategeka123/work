@@ -37,10 +37,10 @@
             <div class="form">
                 <h2>Send Feedback</h2>
                 <div class="user">
-                    <input type="email" placeholder="Enter your Email">
+                    <input type="email" id="email" placeholder="Enter your Email">
                 </div>
                 <div class="username">
-                    <input type="text" placeholder="Enter Username">
+                    <input type="text" id="username" placeholder="Enter Username">
                 </div>
                 <textarea placeholder="Enter Massege"></textarea>
                 <div class="rating">
@@ -61,6 +61,11 @@
             </div>
         </form>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+    <script src="./firebase/firebase.js"></script>
+    <script src="./firebase/commet.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
