@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../profile/profile.css">
     <link rel="stylesheet" href="../css/adimin.css">
     <title>Admini Part</title>
 </head>
@@ -24,7 +25,7 @@
                         <li><a href="#proj" data-after="Projects">Projects</a></li>
                         <li><a href="#contact" data-after="Contact">Contact</a></li>
                         <li><a href="./blog.html" data-after="Blog">Blog</a></li> -->
-                        <li><a href="#" data-after="Login">@Adim</a></li>
+                        <li><a href="../../index.html" data-after="Login">@Adim</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,49 +38,43 @@
         <div class="left-sidebar">
             <ul>
                 <li><a href="../posts/index.html">Manage Posts</a></li>
-                <li><a href="index.html">Manage Users</a></li>
+                <li><a href="../users/index.html">Manage Users</a></li>
                 <li><a href="../topics/index.html">Manage Topics</a></li>
-                <li><a href="../profile/profile.html"> User Profile</a></li>
+                <li><a href="profile.html">User Profile</a></li>
             </ul>
         </div>
         <!-- end left-sidebar -->
 
-        <!-- admin-content -->
-        <div class="admin-content">
-            <div class="button-group">
-                <a href="create.html" class="btn btn-big">Add User</a>
-                <a href="index.html" class="btn btn-big">Manage User</a>
+        <div class="content">
+            <div class="form">
+                <form action=""class="Username">
+                <div class="input-wrapper">
+                    <label>User Name:</label>
+                    <input type="text" name="Uname" id="profile-user-name" > 
+                </div>    
+                <div class="input-wrapper">
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" placeholder="Email" id="mail"> 
+                </div>
+                <div class="input-wrapper">
+                    <label for="Phone">Phone</label>
+                    <input type="phone" name="phone" placeholder="Phone">
+                </div>
+            </form>
+            <button id="update">Updating</button>
+             
+       </div>
+    
+            <div class="profile">
+                <img src="../../image/jmv.jpg"alt="profile">
+                <h3>Jean Marie Vianney</h3>
+                <input type="file" name="image" id="image-input" accept="image/*" hidden>
+                <input type="button"  name="Upload" id="Upload" value="Upload image" onclick="getImage()"> 
             </div>
-
-            <div class="content">
-                <h2 class="page-title">Add User</h2>
-                <form action="create.html" method="post">
-                    <div class="input-wrapper">
-                        <label for="Name">Name</label>
-                        <input type="text" name="name" placeholder="Your names">
-                    </div>
-
-                    <div class="input-wrapper">
-                     <label for="Email">Email</label>
-                     <input type="email" name="name" placeholder="Your Email">
-                 </div>
-
-                 <div class="input-wrapper">
-                     <label for="Password">Password</label>
-                     <input type="text" name="name" placeholder="Create Password">
-                 </div>
-
-                 <div class="input-wrapper">
-                     <label for="Name">Confirm Password</label>
-                     <input type="text" name="name" placeholder="Re-enter password">
-                 </div>
-                    <div>
-                        <button type="submit" class="btn btn-big">Add User</button>
-                    </div>
-                </form>
-            </div>
+            
         </div>
-        <!-- end admin-content -->
+          
+        
     </div>
     <!-- end admin page wraper -->
     <script src="../../app.js"></script>

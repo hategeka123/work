@@ -593,6 +593,14 @@ p{
     cursor: pointer;
     transition: .7s ease;
 }
+.contact-form #error_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
 /* End contact section */
 
 /*  project section */
