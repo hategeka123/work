@@ -1,8 +1,9 @@
-const commentForm = document.querySelector(".form");
-commentForm.addEventListener("submit", (e) =>{
+
+const commentForm = document.querySelector("#form");
+commentForm.addEventListener('submit', (e) =>{
     e.preventDefault()
     const username = document.querySelector("#username").value;
-    const email = email.querySelector("#email").value;
+    const email = document.querySelector("#email").value;
     const contacted_at = new Date()
     
     let comment = {
@@ -10,8 +11,8 @@ commentForm.addEventListener("submit", (e) =>{
         email,
         data:contacted_at
     }
-    firebase.firestore().collection("contact").add(contact).then(() =>{
-        alert("Thank you for contact me")
+    firebase.firestore().collection("comment").add(comment).then(() =>{
+        alert("Thank you for comment on my blog")
         commentForm.reset();
     }).catch(error => alert(error.message))
     

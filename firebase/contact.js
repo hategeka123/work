@@ -1,9 +1,9 @@
 const contactForm = document.querySelector("#contact-form");
-contactForm.addEventListener("submit", (e) =>{
+contactForm.addEventListener('submit', (e) =>{
     e.preventDefault()
     const names = document.querySelector("#fname").value;
-    const email = email.querySelector("#email").value;
-    const description = description.querySelector("#description").value;
+    const email = document.querySelector("#email").value;
+    const description = document.querySelector("#description").value;
     const contacted_at = new Date()
     
     let contact = {
