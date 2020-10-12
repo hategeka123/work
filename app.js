@@ -20,7 +20,7 @@ window.addEventListener('scroll', event =>{
     let fromTop = window.scrollY;
 
    nav_link.forEach(link => {
-    let section = document.querySelector("link.hash");
+    let section = document.querySelector(link.hash);
 
     if (section.offsetTop <= fromTop + 70 && section.offsetTop + section.offsetHeight > fromTop + 70){
         link.style.color = 'crimson';

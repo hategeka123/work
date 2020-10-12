@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=montserrat:300,400,700&display=swap');
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 *{
     padding: 0;
     margin: 0;
@@ -332,11 +333,9 @@ form h2 {
     align-items: center;
 }
 .i i {
-    color: #d9d9d9;
+    color: green;
     transition: .3s;
-}
-.fa-lock:before {
-    content: "\f023";
+    font-size: 25px;
 }
 .input_div > div h5 {
     position: absolute;

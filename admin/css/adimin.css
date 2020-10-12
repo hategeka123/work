@@ -36,16 +36,16 @@ body{
     background: darkgrey;
 }
 .admin-wrapper .admin-content{
-    padding-top: 100px;
+    padding-top: 90px;
     padding-left: 40px;
-    height: 1000x;
+    height: 1000px;
     width: 100%;
     right: 0;
     overflow-y: scroll;
 }
 .btn{
     padding-top: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 100px;
     font-size: 2rem;
     background-color: gray;
@@ -54,6 +54,9 @@ body{
 }
 .btn:hover{
     background-color: cornsilk;
+}
+.btn-big{
+
 }
 .content{
     margin-left: 20px;
@@ -78,14 +81,35 @@ th, td{
 }
 .edit{
     color: green;
+    display: inline-block;
+    /* padding: 10px 30px; */
+    /* color: white; */
+    background-color: transparent;
+    border: 3px solid gray;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    margin-left: 10px;
+    transition: .3s ease;
+    transition-property: background-color, color;
 }
 .delete{
     color: red;
+    margin-left: 180px;
+    /* color: green; */
+    display: inline-block;
+    /* padding: 10px 30px; */
+    /* color: white; */
+    background-color: transparent;
+    border: 3px solid gray;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    /* margin-top: 30px; */
+    transition: .3s ease;
+    transition-property: background-color, color;
 }
-.publish{
-    color: blue;
-}
-
 .edit:hover,
 .delete:hover,
 .publish:hover{
@@ -133,4 +157,13 @@ form input {
     /* border-radius: 20px 20px; */
     border-width: 0px;
     background-color: darkgrey;
+}
+.flexbox-blog {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 20%; */
+    /* margin-right: 10%; */
+    margin: 5px;
+    /* padding-left: 70px; */
+    flex-wrap: wrap;
 }
