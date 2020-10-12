@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: gray;
-    padding-top: 15vh;
+    background-color: whitesmoke;
+    padding-top: 11vh;
 }
 html{
     font-size: 10px;
@@ -16,6 +16,7 @@ a{
     text-decoration: none;
 }
 .container{
+    
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -215,8 +216,10 @@ p{
 .flexbox-blog {
     display: flex;
     flex-direction: row;
-    margin-left: 20%;
-    margin-right: 10%;
+    /* margin-left: 20%; */
+    /* margin-right: 10%; */
+    margin: 30px;
+    padding-left: 70px;
     flex-wrap: wrap;
 }
 .flexbox-blog .flexbox-blog-item {
