@@ -3,8 +3,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color:white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -16,7 +17,7 @@ h2{
     text-transform: uppercase;
 }
 .form{
-    margin: 30px;
+    align-content: center;
     box-sizing: border-box;
 }
 .user input{
@@ -35,7 +36,7 @@ h2{
     margin-top: 3%;
     border: none;
     background: transparent;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid black;
     font-size: 20px;
     outline: none; 
 }
@@ -53,14 +54,14 @@ textarea{
     resize: none;
     margin-top: 3%;
     padding-top: 10px;
-    text-align: center;
+    /* text-align: center; */
     font-size: 18px; 
 }
 textarea::placeholder{
     color: #222;
 }
 .sub{
-    margin-top: 15%;
+    margin-top: 5%;
     position: relative;
 }
 .sub input{
@@ -124,4 +125,76 @@ label h4{
 .rating input:checked + label h4{
     transform: translateY(0) scale(1);
     opacity: 1;
+}
+.flexbox-blog-item {
+
+   border-radius: 15px;
+   margin: 50px 50px;
+   margin-top: 150px;
+
+}
+.flexbox-blog-item h3{
+   padding-top: 15px;
+   font-size: 2.5rem; 
+}
+.flexbox-blog-item p{
+    font-size: 2rem;
+}
+.comment{
+    /* background-color: gray; */
+    margin-top: 30px;
+    border: 1px solid lightgray;
+    /* border-style: solid;
+    border-width: 2px; */
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+.commentContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60vw;
+    height: fit-content;
+    padding-bottom: 20px;
+    /* margin-left: 20vw; */
+    /* float: left; */
+    
+}
+.image img{
+    width: 80px;
+    height: 80px;
+    /* padding-top: 30px;
+    margin-top: 30px; */
+    margin-left: 20px;
+    border-radius: 50%;
+    float: left;
+}
+.commentContainer .commentArea {
+    align-items: center;
+    margin-left: 3vw;
+    justify-content: center;
+}
+.commentContainer .commentArea p{
+    align-content: center;
+    justify-content: center;
+    /* position: absolute; */
+    font-size: 2rem;
+}
+.commentContainer .address{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.commentContainer .address h5{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.commentArea h3{
+    font-size: 2rem;
+}
+.commentArea span{
+ color: lightgray;
+
 }

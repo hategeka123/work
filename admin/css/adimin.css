@@ -55,9 +55,6 @@ body{
 .btn:hover{
     background-color: cornsilk;
 }
-.btn-big{
-
-}
 .content{
     margin-left: 20px;
     margin-right: 20px;
@@ -116,8 +113,10 @@ th, td{
     text-decoration: underline;
 }
 form{
-    margin: 30px;
+    /* margin: 30px; */
+    margin-left: 320px;
     box-sizing: border-box;
+    align-content: center;
     /* background-color: gray; */
 }
 .title input{
@@ -157,6 +156,10 @@ form input {
     /* border-radius: 20px 20px; */
     border-width: 0px;
     background-color: darkgrey;
+}
+form input[type="file"]{
+    width: 50%;
+    /* background-color: red; */
 }
 .flexbox-blog {
     display: flex;
