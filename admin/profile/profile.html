@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e4761ce9e4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../profile/profile.css">
     <link rel="stylesheet" href="../css/adimin.css">
@@ -46,31 +47,49 @@
         <!-- end left-sidebar -->
 
         <div class="content">
-            <div class="form">
-                <form action=""class="Username">
-                <div class="input-wrapper">
-                    <label>User Name:</label>
-                    <input type="text" name="Uname" id="profile-user-name" > 
-                </div>    
-                <div class="input-wrapper">
-                    <label for="Email">Email</label>
-                    <input type="email" name="email" placeholder="Email" id="mail"> 
-                </div>
-                <div class="input-wrapper">
-                    <label for="Phone">Phone</label>
-                    <input type="phone" name="phone" placeholder="Phone">
-                </div>
-            </form>
-            <button id="update">Updating</button>
-             
-       </div>
-    
-            <div class="profile">
-                <img src="../../image/jmv.jpg"alt="profile">
-                <h3>Jean Marie Vianney</h3>
-                <input type="file" name="image" id="image-input" accept="image/*" hidden>
-                <input type="button"  name="Upload" id="Upload" value="Upload image" onclick="getImage()"> 
-            </div>
+                  
+                      
+                    <div class="profile">
+                        <img src="../../image/jmv.jpg"alt="profile">
+                        <h3>Jean Marie Vianney</h3>
+                        <div class="image">
+                            <label>Select image:</label><br>
+                            <input type="file" id="img" name="img"><br>
+                        </div>
+                    </div>
+
+                    <div class="userRole">
+                        <table>
+                            <tr>
+                                <th>Names</th>
+                                <th>UserRole</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>Hategekimana jmv</td>
+                                <td>Admin</td>
+                                <td>
+                                    <i class="fas fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Akimana janet</td>
+                                <td>User</td>
+                                <td>
+                                    <i class="fas fa-trash-alt"></i> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Umwiza Rosine</td>
+                                <td>User</td>
+                                <td>
+                                    <i class="fas fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    
             
         </div>
           
@@ -80,7 +99,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
-    <script src="./firebase/firebase.js"></script>
+    <script src="../../firebase/firebase.js"></script>
     <script src="../../app.js"></script>
 </body>
 </html>

@@ -308,8 +308,8 @@ p{
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
-    margin: 0 auto;
-    padding: px 0;  
+    /* margin: 0 auto;
+    padding: px 0;   */
 }
 #projects .projects .section-title{
     margin-top: 40px;
@@ -317,7 +317,7 @@ p{
 #projects .projects .section-title h1{
     font-size: 3rem;
     font-weight: 100;
-    margin-top: 40px;
+    margin-top: 10px;
     border-bottom: 2px solid cyan;
     margin-bottom: 12px;
     text-align: center;
@@ -338,130 +338,6 @@ p{
     font-size: 3.5rem;
     color: crimson;
 }
-#projects .projects a.btn{
-    display: inline-block;
-    padding: 10px;
-    color: black;
-    background-color: transparent;
-    border: 3px solid crimson;
-    font-size: 20px;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 5%;
-    text-transform: uppercase;
-    transition: .3s ease background-color;
-}
-/* End project section */
-/* skills section */
-#skills .flexbox {
-    flex-direction: column;
-    display: flex;
-    max-width: 1500px;
-    padding: 20px;
-    margin-top: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #FDF9F9; */
-}
-#skills .flexbox .skill-title {
-    text-align: center;
-    color: blue;
-    font-size: 2rem;
-    position: relative;
-}
-#skills .flexbox span {
-    text-align: center;
-    margin-top: 10px;
-    width: 10%;
-    background-color: cyan;
-    margin-left: 8px;
-    border: 2px solid cyan;
-}
-#skills .flexbox .flex-skills {
-    align-items: center;
-    margin: 10px;
-}
-#skills .flexbox .flex-skills {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row: auto;
-    grid-column-gap: 10px;
-}
-#skills .flexbox .exper-title {
-    text-align: center;
-    font-size: 2rem;
-    color: blue;
-    position: relative;
-    margin-bottom: 30px;
-    border-bottom: 2px solid cyan;
-}
-#skills .flexbox .flex-my-experience {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    width: 90%;
-    padding: 20px;
-    margin-left: -25px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    min-height: 20%;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #ECE9E9;
-    box-shadow: #EFEBEB;
-}
-#skills .flexbox .flex-my-experience .flex-exper-item {
-    width: 27vw;
-    height: 300px;
-}
-#skills .flexbox .flex-my-experience .flex-exper-item img {
-    width: 350px;
-    height: 180px;
-}
-#skills .flexbox .flex-my-experience .flex-exper-item p {
-    font-size: 1.3rem;
-    margin-left: -3px;
-}
-#skills .flexbox .flex-my-experience .flex-exper-item {
-    width: 27vw;
-    height: 300px;
-}
-#skills .flexbox .flex-my-experience .flex-exper-item img {
-    width: 350px;
-    height: 180px;
-}
-#skills .flexbox .flex-my-experience p {
-    font-size: 1.2rem;
-    margin-left: 30px;
-}
-#skills .flexbox .flex-my-experience .flex-exper-item p {
-    font-size: 1.3rem;
-    margin-left: -3px;
-}
-#skills .flexbox .flex-my-experience p {
-    font-size: 1.2rem;
-    margin-left: 30px;
-}
-#skills .flexbox .flex-my-experience .flex-exper-item {
-    width: 27vw;
-    height: 300px;
-}
-#skills .flexbox .flex-my-experience .flex-exper-item img {
-    width: 350px;
-    height: 180px;
-}
-#skills .flexbox .flex-my-experience .flex-exper-item p {
-    font-size: 1.3rem;
-    margin-left: -3px;
-}
-#skills .flexbox .flex-my-experience p {
-    font-size: 1.2rem;
-    margin-left: 30px;
-}
-/* End skills section */
-
-/* proj section  */
 .title h1 {
     text-align: center;
     color: blue;
@@ -486,14 +362,43 @@ p{
     height: 320px;
     transition: .6s ease;
 }
-.flexbox-project .flexbox-project-item img {
-    /* width: ;
-    height: 200px; */
-}
+
 .flexbox-project .flexbox-project-item p {
     font-size: 1.3rem;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.Skills{
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    margin-bottom: 20px;
+}
+.skills_image img{
+    width: 10vw;
+    height: 20vh;
+    margin-left: 30px;
+
+}
+.detail_skill{
+   margin-left: 40px;
+}
+.projects h3{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid blanchedalmond;
+}
+.projects h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.detail_skill p{
+    font-size: 2rem;
 }
 /* End proj section  */
 
@@ -543,6 +448,9 @@ p{
     color: cyan;
     font-size: 20px;
 }
+:focus {
+    outline: none;
+}
 
 .contacts .contact-form form{
     padding: 30px;
@@ -583,6 +491,7 @@ p{
     text-align: center;
     align-items: center;
     justify-content: center;
+    
 }
 .contact-social-media img{
     margin-bottom: 20px;
@@ -592,6 +501,10 @@ p{
     height: 40px;
     cursor: pointer;
     transition: .7s ease;
+}
+.contact-social-media :hover{
+    transform: scale(2.2);
+    transition: ease 0.2s;
 }
 .contact-form #error_message{
     margin-bottom: 20px;

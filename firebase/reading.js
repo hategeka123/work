@@ -1,29 +1,3 @@
-// const blog = document.querySelector(".flexbox-blog");
-// // const myBlogs = document.getElementById("myBlogs");
-
-// db.collection("blogs").get().then((blogs) =>{
-//     blogs.forEach((doc) => {
-// let myBlogs = document.createElement("div");
-
-// myBlogs.innerHTML = `<div class="flexbox-blog-item" id=${doc.id}>
-//                 <img src="${doc.data().imageref}">
-//                 <a><h3 onclick="readingBlogs('${doc.id}')">${doc.data().title}</h3></a>
-                
-//                 <p>
-//                 ${doc.data().description.substring(0, 110)}.......
-//                 </p>
-//             </div>`
-// blog.appendChild(myBlogs)
-          
-//     });
-// })
-// function readingBlogs(id){
-// localStorage.setItem('blogId', id)    
- 
-// window.location.href='./commet.html'
-
-// }
-
 const blog = document.querySelector(".flexbox-blog");
 // const myBlogs = document.getElementById("myBlogs");
 
@@ -40,6 +14,7 @@ const blogDiv = `<div class="flexbox-blog-item" id=${doc.id}>
                 <p>
                 ${doc.data().description.substring(0, 110)}...
                 </p>
+                
             </div>`
 
             blog.innerHTML += blogDiv

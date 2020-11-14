@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.skill-content .skilledit_content form{
+    align-items: center;
+    margin-left: 90px;
+}
+
+.skill-content .skilledit_content h2{
+    align-items: center;
+    margin-left: 250px;
+}
+
+.title input{
+    height: 50px;
+    width: 400px;
+    margin-bottom: 20px; 
+}
+.image input{
+    margin-bottom: 20px;
+}
+label{
+    font-size: 2rem;
+}
+textarea{
+    width: 400px;
+    height: 200px;
+    /* background: linear-gradient(18edeg, #5bea, #ffc0);
+    box-shadow: 0 0 20px 4px #303030; */
+    resize: none;
+    /* margin-top: 3%; */
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px; 
+}
+.image img{
+
+    height: 25vh;
+    width: 15vw;
+}
+.skilledit_content{
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}

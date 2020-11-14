@@ -225,14 +225,22 @@ p{
 .flexbox-blog .flexbox-blog-item {
     display: flex;
     flex-direction: column;
-   height: 70vh;
+   height: 53vh;
    padding: 30px;
    width: 350px;
    border-radius: 15px;
-   box-shadow: 2px 0px 15px green;
+   box-shadow: 2px 0px lavender;
    background-color: white;
    margin-right: 50px;
    margin-top: 50px;
+   transform: scale(1.1);
+
+}
+.flexbox-blog .flexbox-blog-item :hover{
+    
+    transition: ease 0.7s;
+   
+   transform: scale(1.1);
 
 }
 .flexbox-blog .flexbox-blog-item img {
@@ -256,6 +264,7 @@ p{
     font-weight: bold;
     font-size: 2rem;
 }
+
  /* key frame */
  @keyframes hamburger_puls{
     0%{

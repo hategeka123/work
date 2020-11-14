@@ -1,11 +1,10 @@
 const email = document.getElementById("email");
 const password = document.getElementById("password");
-
 function signUp() {
 
-    auth.createUserWithEmailAndPassword(email.value, password.value)
+    auth.createUserWithEmailAndPassword(email.value, password.value,)
     .then(()=>{
-        window.location = "./index.html"
+        window.location = "./../admin/profile/profile.html"
     })
     .catch(e => alert(e.massage));
     
@@ -15,3 +14,4 @@ signUpForm.addEventListener("submit", (e) => {
     e.preventDefault();
     signUp()
 } );
+
