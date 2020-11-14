@@ -5,7 +5,7 @@ const myForm = document.querySelector("#send");
 const id = localStorage.getItem('blogId')
 console.log(window.location.href)
 const arrayId = window.location.href.split('/').slice('-1').pop()
-console.log(arrayId)
+// console.log(arrayId)
 
 const blogContainer = document.querySelector('.singleBlog');
 
@@ -57,7 +57,7 @@ function getcomment(){
         const div = document.createElement('div')
         div.innerHTML = `
         <div class="image">
-        <img src="../work/image/jmv.jpg" >
+        <img src="../../image/image1.png">
         </div>
         <div class="commentArea">
 

@@ -76,39 +76,8 @@ th, td{
     text-align: left;
     border-bottom: 1px solid black;
 }
-.edit{
-    color: green;
-    display: inline-block;
-    /* padding: 10px 30px; */
-    /* color: white; */
-    background-color: transparent;
-    border: 3px solid gray;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    margin-left: 10px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-}
-.delete{
-    color: red;
-    margin-left: 180px;
-    /* color: green; */
-    display: inline-block;
-    /* padding: 10px 30px; */
-    /* color: white; */
-    background-color: transparent;
-    border: 3px solid gray;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    /* margin-top: 30px; */
-    transition: .3s ease;
-    transition-property: background-color, color;
-}
-.edit:hover,
-.delete:hover,
+
+
 .publish:hover{
     text-decoration: underline;
 }
@@ -169,4 +138,66 @@ form input[type="file"]{
     margin: 5px;
     /* padding-left: 70px; */
     flex-wrap: wrap;
+}
+
+.costom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px; 
+    /* background-color: red; */
+    height: 30vh;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    
+}
+
+.detail{
+    margin-left: 40px;
+}
+
+.detail p{
+    font-size: 2rem;
+}
+
+.detail h2{
+    font-size: 2rem;
+}
+
+ img{
+   width: 10vw;
+   height: 20vh;
+}
+
+.detail span{
+    margin-left: 30px;
+    font-size: 1.5rem;
+    color: solid grey;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    font-size: 25px;
+    /* margin-top: 2vh; */
+    /* align-items: flex-end; */
+
+}
+.button #bt {
+
+    color: gray;
+}
+
+.button #dt {
+
+    color: tomato;
+}
+
+.button #edt{
+
+    color: gray;
+}
+.button #dlt{
+    color: tomato;
 }
