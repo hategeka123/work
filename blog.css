@@ -216,8 +216,6 @@ p{
 .flexbox-blog {
     display: flex;
     flex-direction: row;
-    /* margin-left: 20%; */
-    /* margin-right: 10%; */
     margin: 30px;
     padding-left: 70px;
     flex-wrap: wrap;
@@ -225,30 +223,33 @@ p{
 .flexbox-blog .flexbox-blog-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
    height: 53vh;
    padding: 30px;
    width: 350px;
    border-radius: 15px;
    box-shadow: 2px 0px lavender;
    background-color: white;
-   margin-right: 50px;
+   margin-right: 85px;
    margin-top: 50px;
    transform: scale(1.1);
+   margin-bottom: 40px;
 
 }
-.flexbox-blog .flexbox-blog-item :hover{
+.flexbox-blog  :hover{
     
     transition: ease 0.7s;
    
-   transform: scale(1.1);
+   transform: scale(1.2);
 
 }
 .flexbox-blog .flexbox-blog-item img {
-    width: 300px;
-    height: 180px;
+    width: 250px;
+    height: 150px;
     align-self: center;
     padding: 2px;
-    padding-bottom: 20px;
+    justify-content: space-around;
+    /* padding-bottom: 5px; */
 }
 .flexbox-blog .flexbox-blog-item p {
     font-size: 2rem;

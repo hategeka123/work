@@ -371,12 +371,16 @@ p{
 .Skills{
     display: flex;
     flex-direction: row;
-    height: 30vh;
-    width: 80vw;
+    height: 40vh;
+    width: 75vw;
     justify-content: center;
     align-items: center;
     border: 2px solid gray;
     margin-bottom: 20px;
+}
+.mySkill :hover{
+   transition: ease 0.8s;
+   transform: scale(1.1);
 }
 .skills_image img{
     width: 10vw;
@@ -388,17 +392,18 @@ p{
    margin-left: 40px;
 }
 .projects h3{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     border-bottom: 2px solid blanchedalmond;
 }
 .projects h2{
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 .detail_skill p{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    
 }
 /* End proj section  */
 
@@ -491,11 +496,12 @@ p{
     text-align: center;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
     
 }
 .contact-social-media img{
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 20px;
     width: 40px;
     height: 40px;
@@ -503,8 +509,8 @@ p{
     transition: .7s ease;
 }
 .contact-social-media :hover{
-    transform: scale(2.2);
-    transition: ease 0.2s;
+    transform: scale(1.7);
+    transition: ease 0.7s;
 }
 .contact-form #error_message{
     margin-bottom: 20px;

@@ -47,50 +47,35 @@
         <!-- end left-sidebar -->
 
         <div class="content">
-                  
-                      
-                    <div class="profile">
-                        <img src="../../image/jmv.jpg"alt="profile">
-                        <h3>Jean Marie Vianney</h3>
-                        <div class="image">
-                            <label>Select image:</label><br>
-                            <input type="file" id="img" name="img"><br>
-                        </div>
-                    </div>
-
-                    <div class="userRole">
-                        <table>
-                            <tr>
-                                <th>Names</th>
-                                <th>UserRole</th>
-                                <th>Action</th>
-                            </tr>
-                            <tr>
-                                <td>Hategekimana jmv</td>
-                                <td>Admin</td>
-                                <td>
-                                    <i class="fas fa-trash-alt"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Akimana janet</td>
-                                <td>User</td>
-                                <td>
-                                    <i class="fas fa-trash-alt"></i> 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Umwiza Rosine</td>
-                                <td>User</td>
-                                <td>
-                                    <i class="fas fa-trash-alt"></i>
-                                </td>
-                            </tr>
-                            
-                        </table>
-                    </div>
-                    
-            
+            <div class="profile">
+                <img src="../../image/jmv.jpg"alt="profile">
+                <h3>Jean Marie Vianney</h3>
+                <div class="image">
+                    <label>Select image:</label><br>
+                    <input type="file" id="img" name="img"><br>
+                </div>
+            </div>
+            <tr>
+            <div class="UserSignup">
+                <div class="userRole">
+                    <table>
+                        <tr>
+                            <th>Names</th>
+                            <th>UserRole</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr class="userData">
+                            <td class="name"></td>
+                            <td class="role"></td>
+                            <td>
+                                <i class="fas fa-trash-alt"></i>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                
+            </div>
         </div>
           
         
@@ -100,6 +85,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
     <script src="../../firebase/firebase.js"></script>
+    <!-- <script src="../../firebase/signup.js"></script> -->
+    <script src="../../firebase/gettingUser.js"></script>
     <script src="../../app.js"></script>
 </body>
 </html>
