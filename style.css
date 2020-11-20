@@ -48,7 +48,7 @@ p{
 .section-title span{
     color: crimson;
 }
-.cta{
+/* .cta{
     display: inline-block;
     padding: 10px 30px;
     color: white;
@@ -64,7 +64,7 @@ p{
 .cta:hover{
     color: white;
     background-color: crimson;
-}
+} */
 .brand h1{
     font-size: 3rem;
     text-transform: uppercase;
@@ -218,8 +218,9 @@ p{
     background-position: top center;
     position: relative;
     z-index: -1;
-    /* background-color: black; */
-    padding: 10px;
+    /* padding: 10px; */
+    height: 20%;
+
 }
 
 #hero::after{
@@ -283,7 +284,7 @@ p{
 #hero h1:nth-child(3) span{
     animation-delay: 2.5s;
 }
-#hero .cta{
+/* #hero .cta{
     display: inline-block;
     padding: 10px 30px;
     color: white;
@@ -295,11 +296,11 @@ p{
     margin-top: 30px;
     transition: .3s ease;
     transition-property: background-color, color;
-}
-#hero .cta:hover{
+} */
+/* #hero .cta:hover{
     color: white;
     background-color: crimson;
-}
+} */
 /* end hero section */
 
 /*  project section */
@@ -372,7 +373,7 @@ p{
     display: flex;
     flex-direction: row;
     height: 40vh;
-    width: 75vw;
+    width: 70vw;
     justify-content: center;
     align-items: center;
     border: 2px solid gray;
@@ -380,13 +381,18 @@ p{
 }
 .mySkill :hover{
    transition: ease 0.8s;
-   transform: scale(1.1);
+   transform: scale(1.05);
 }
 .skills_image img{
     width: 10vw;
     height: 20vh;
     margin-left: 30px;
 
+}
+.mySkill p{
+    width: 90%;
+    font-size: 2rem;
+    margin-left: 20px;
 }
 .detail_skill{
    margin-left: 40px;
@@ -520,6 +526,10 @@ p{
     font-size: 14px;
     transition: all 0.5s ease;
 }
+.act{
+
+    font-size: 2rem;
+}
 /* End contact section */
 
 /*  project section */
@@ -572,6 +582,7 @@ p{
         display: flex;
         flex-direction: column;
         padding-top: 75%;
+        padding-bottom: 75%;
     }
     #hero h1{
         display: block;

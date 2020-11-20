@@ -1,65 +1,40 @@
 
-const userData = document.querySelector(".userData")
 const userName = document.querySelector(".name")
 const userRole = document.querySelector(".role")
+const table = document.querySelector(".thead-inverse")
+console.log("jmv")
+console.log(table)
+// thead-inverse
+// tdata
 // console.log(user)
 firebase.firestore().collection("Users").get().then((Users) =>{
     Users.forEach((doc) =>{
-        console.log(doc.data())
-        const userDiv = ` <div class="userRole">
-        <table>
-            
-            <tr>
-                <td>${doc.data().name}</td>
-                <td>${doc.data().userRole}</td>
-                <td>
-                <i onclick="deleteContact()" class="fas fa-trash-alt" id = "dlt"></i>
-                </td>
-            </tr>
-        </table>
-    </div>`
-    // userName.innerHTML += `${doc.data().name}`
-    userData.innerHTML += ` 
-        <td>${doc.data().name}</td>            
-        <td>${doc.data().userRole}</td>
-    `
+        const id = doc.id
+        // console.log(id)
+        // console.log(doc.data())
+        
+        const row = `<tbody class="tdata" id="${doc.id}">
+        <td id="titleTask"> ${doc.data().name}</td>
+        <td id="categoryTask"> ${doc.data().userRole}</td>
+        <td id="statusTask"><i onclick="deleteBlog()" class="fas fa-trash-alt" id = "dt"></i></td>
+        </tr>
+        </tbody>`;
+        table.innerHTML +=row
+console.log(row.id)        
     })
 })
 
+function deleteBlog(){
+    const mydi = event.target.parentElement.parentNode.class
+    console.log(mydi)
+    // firebase.firestore().collection("Users").doc().delete();
+    // console.log(userId)
+    alert("Deleted successfully!!!")
+}
 // ----------------------------------- delete user------------------------------------------------
 
-function deleteContact(){
-    const userId = event.target.parentNode.parentNode.id
-    console.log(userId)
-}
-
-
-// const userName = document.querySelector(".name")
-// const userRole = document.querySelector(".role")
-// // console.log(user)
-// firebase.firestore().collection("Users").get().then((Users) =>{
-//     Users.forEach((doc) =>{
-//         console.log(doc.data())
-//         const userDiv = ` <div class="userRole">
-//         <table>
-            
-//             <tr>
-//                 <td>${doc.data().name}</td>
-                
-//                 <td>
-//                 <i onclick="deleteContact()" class="fas fa-trash-alt" id = "dlt"></i>
-//                 </td>
-//             </tr>
-//         </table>
-//     </div>`
-//     userName.innerHTML += userDiv
-//     })
-// })
-
-// // ----------------------------------- delete user------------------------------------------------
-
 // function deleteContact(){
-//     const userId = event.target.parentNode.parentNode.id
+//     const userId = event.target.parentNode.parentNode
 //     console.log(userId)
 // }
 

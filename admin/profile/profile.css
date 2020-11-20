@@ -147,18 +147,29 @@ form {
     justify-content: center;
     margin-left: 28vw;
     margin-top: 20px;
+    
 }
 .profile img{
     border-radius: 100px;
 }
-.userRole{
+.userheader{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-    /* padding-bottom: 100px; */
+    /* margin-left: 80px; */
+    justify-content: space-around;
+    padding-top: 40px;
+    font-size: 2rem;
 }
-
-
-  
-  
+.userheader .table{
+    width: 70%;
+    padding-left: 10px;
+}
+.userheader .table i{
+    color: crimson;
+    cursor: pointer;
+}
+.userheader .table td {
+    padding:20px;   
+  }
 

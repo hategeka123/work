@@ -3,7 +3,6 @@ const password = document.getElementById("password");
 const name = document.querySelector("#name");
 
 async function signUp() {
-    
     await auth.createUserWithEmailAndPassword(email.value, password.value,)
     .then((userInfo)=>{
         
@@ -19,7 +18,7 @@ async function signUp() {
     })
     .then(() =>{
         signUpForm.reset()
-        window.location = "./../admin/profile/profile.html"
+        window.location = "./login.html"
     })
     .catch(e => console.log(e));
     

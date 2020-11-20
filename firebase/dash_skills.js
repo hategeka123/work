@@ -28,9 +28,9 @@ firebase.firestore().collection("skills").get().then((Skills) =>{
             </div>
             
         <div class="button">
-           <a href="../../editSkill.html#/${doc.id}"><i onclick="editSkill()" class="far fa-edit" id = "edt"></i></a>
+           <a href="../../editSkill.html#/${doc.id}"><i onclick="editSkill()" class="far fa-edit" id = "edits"></i></a>
             
-            <i onclick="deleteSkill()" class="fas fa-trash-alt" id = "dlt"></i>
+            <i onclick="deleteSkill()" class="fas fa-trash-alt" id = "delete"></i>
         </div>
         
     </div>`

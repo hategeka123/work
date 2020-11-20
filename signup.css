@@ -39,16 +39,19 @@ body{
     margin-top: 50%;
     margin-left: 25%;
 }
+
 .signup-form-wrapper {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    margin-right: 300px;
     border-radius: 20px 20px;
     background: black
 }
 form {
     width: 90%;
+    
 }
 .input-wrapper {
     width: 100%;
@@ -93,6 +96,18 @@ form input {
     width: 100%;
     margin-top: 1em;
 }
+.input-wrapperl .cta{
+    font-size: 2rem;
+    color: crimson;
+
+} 
+.input-wrapperl .login{
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+
+}  
 form label {
     display: block;
 }
@@ -127,12 +142,7 @@ form button {
         margin-bottom: 30px;
         
     }
-    .cta{
-        width: 100%;
-        font-size: 2rem;
-        padding: 20px 60px;
-        text-align: center;
-    }
+   
     form{
         width: 100%;
     }

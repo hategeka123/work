@@ -19,15 +19,15 @@ firebase.firestore().collection("contact").get().then((contact) =>{
                             <img src="../../image/image1.png">
                         </div>
                         <div class="detail">
-                            <h2 class="name">${doc.data().names} <span> ${dateResult}</span> </h2>
+                            <h2 class="name">${doc.data().names}: <span> ${doc.data().email} </span> <span> ${dateResult}</span> </h2>
                             <p>
+                                
                                 ${doc.data().description}
                             </p>
                            
                         </div>
                         
                         <div class="button">
-                            <i class="fa fa-reply" aria-hidden="true"></i>
                             <i onclick="deleteContact()" class="fas fa-trash-alt" id = "dt"></i>
                         </div>
 

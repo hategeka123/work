@@ -15,10 +15,13 @@
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
-                    <a href="."><h1><span>J.</span><span>M</span>arie</h1></a>
+                    <a href="../../index.html"><h1><span>J.</span><span>M</span>arie</h1></a>
                 </div>
                 <div class="nav-list">
                     <div class="hamburger"><div class="bar"></div></div>
+                    <div class="logout" onclick="logOutUser()">
+                        Logout
+                    </div>
                     <ul>
                         <!-- <li><a href="./index.html" data-after="Home">Home</a></li>
                         <li><a href="#projects" data-after="About">About</a></li>
@@ -26,7 +29,7 @@
                         <li><a href="#proj" data-after="Projects">Projects</a></li>
                         <li><a href="#contact" data-after="Contact">Contact</a></li>
                         <li><a href="./blog.html" data-after="Blog">Blog</a></li> -->
-                        <li><a href="../../index.html" data-after="Login">Logout</a></li>
+                        <!-- <li><a href="../../index.html" data-after="Login">Logout</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -41,7 +44,7 @@
                 <li><a href="../posts/index.html">Manage Blogs</a></li>
                 <li><a href="../users/index.html">Manage Contacted</a></li>
                 <li><a href="../topics/index.html">Manage Skills</a></li>
-                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="profile.html">Manage user</a></li>
             </ul>
         </div>
         <!-- end left-sidebar -->
@@ -55,26 +58,15 @@
                     <input type="file" id="img" name="img"><br>
                 </div>
             </div>
-            <tr>
-            <div class="UserSignup">
-                <div class="userRole">
-                    <table>
+            <div class="userheader">
+                <table class="table table-striped" id="ex-table">
+                    <thead class="thead-inverse">
                         <tr>
-                            <th>Names</th>
-                            <th>UserRole</th>
-                            <th>Action</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>action</th>
                         </tr>
-                        <tr class="userData">
-                            <td class="name"></td>
-                            <td class="role"></td>
-                            <td>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                        
-                    </table>
-                </div>
-                
+                    </thead>
             </div>
         </div>
           
@@ -87,6 +79,7 @@
     <script src="../../firebase/firebase.js"></script>
     <!-- <script src="../../firebase/signup.js"></script> -->
     <script src="../../firebase/gettingUser.js"></script>
+    <script src="../../firebase/logout.js"></script>
     <script src="../../app.js"></script>
 </body>
 </html>
