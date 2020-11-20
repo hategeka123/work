@@ -3,22 +3,31 @@ const contacted = document.querySelector(".myContact");
 firebase.firestore().collection("contact").get().then((contact) =>{
 
     contact.forEach((doc) =>{
-        // console.log(doc.data())
 
+
+
+        let date = doc.data().data.toDate()
+        let dateObject = new Date(date)
+        let month = dateObject.toLocaleString('en-GB',{month: 'short'});
+        let year = dateObject.getFullYear()
+        let day = dateObject.toLocaleDateString('en-GB', {day: '2-digit'})
+        let dateResult = `${day}-${month}-${year}`
+        
+             
         const contactDiv = `<div class="costom" id=${doc.id}>
                         <div class="contacted">
                             <img src="../../image/image1.png">
                         </div>
                         <div class="detail">
-                            <h2 class="name">${doc.data().names} <span> ${doc.data().data}</span> </h2>
+                            <h2 class="name">${doc.data().names}: <span> ${doc.data().email} </span> <span> ${dateResult}</span> </h2>
                             <p>
+                                
                                 ${doc.data().description}
                             </p>
                            
                         </div>
                         
                         <div class="button">
-                            <i class="fa fa-reply" aria-hidden="true"></i>
                             <i onclick="deleteContact()" class="fas fa-trash-alt" id = "dt"></i>
                         </div>
 

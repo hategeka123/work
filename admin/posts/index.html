@@ -16,10 +16,13 @@
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
-                    <a href="."><h1><span>J.</span><span>M</span>arie</h1></a>
+                    <a href="../../index.html"><h1><span>J.</span><span>M</span>arie</h1></a>
                 </div>
                 <div class="nav-list">
                     <div class="hamburger"><div class="bar"></div></div>
+                    <div class="logout" onclick="logOutUser()">
+                        Logout
+                    </div>
                     <ul>
                         <!-- <li><a href="./index.html" data-after="Home">Home</a></li>
                         <li><a href="#projects" data-after="About">About</a></li>
@@ -27,7 +30,8 @@
                         <li><a href="#proj" data-after="Projects">Projects</a></li>
                         <li><a href="#contact" data-after="Contact">Contact</a></li>
                         <li><a href="./blog.html" data-after="Blog">Blog</a></li> -->
-                        <li><a href="../../index.html" data-after="Login">Logout</a></li>
+                         
+                        
                     </ul>
                 </div>
             </div>
@@ -50,12 +54,12 @@
         <!-- admin-content -->
         <div class="admin-content">
             <div class="button-group">
-                <a href="create.html" class="btn btn-big">Add Post</a>
-                <a href="index.html" class="btn btn-big">Manage Post</a>
+                <a href="create.html" class="btn btn-big">Add Blog</a>
+                <a href="index.html" class="btn btn-big">Manage blogs</a>
             </div>
 
             <div class="content">
-                <h2 class="page-title">Manage Posts</h2>
+                <h2 class="page-title">Blogs</h2>
                 <section id="blogs">
                     <div id = "myBlogs"></div>
                     <div class="flexbox-blog">
@@ -76,6 +80,7 @@
     <script src="../../firebase/firebase.js"></script>
     <script src="../../firebase/dashbord.js"></script>
     <script src="../../firebase/commet.js"></script>
+    <script src="../../firebase/logout.js"></script>
     <script src="../../app.js"></script>
 </body>
 </html>
