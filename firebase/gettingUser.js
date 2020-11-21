@@ -36,5 +36,3 @@ function deleteBlog(){
 // function deleteContact(){
 //     const userId = event.target.parentNode.parentNode
 //     console.log(userId)
-// }
-

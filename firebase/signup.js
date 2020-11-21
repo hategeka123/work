@@ -1,7 +1,6 @@
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const name = document.querySelector("#name");
-
 async function signUp() {
     await auth.createUserWithEmailAndPassword(email.value, password.value,)
     .then((userInfo)=>{
@@ -12,8 +11,7 @@ async function signUp() {
             userRole: 'user',
             created_at: new Date()
         })
-        
-        
+           
 
     })
     .then(() =>{
@@ -21,6 +19,7 @@ async function signUp() {
         window.location = "./login.html"
     })
     .catch(e => console.log(e));
+
     
 }
 const signUpForm = document.querySelector(".signup");

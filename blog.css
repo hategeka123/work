@@ -49,19 +49,7 @@ p{
 .section-title span{
     color: crimson;
 }
-.cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid crimson;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-}
+
 .cta:hover{
     color: white; 
     background-color: crimson;
@@ -211,7 +199,7 @@ p{
     text-align: center;
     color: blue;
     margin-bottom: 20px;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .flexbox-blog {
     display: flex;
@@ -255,8 +243,8 @@ p{
     font-size: 2rem;
     margin-top: 5px;
     margin-bottom: 20px;
-    padding: 10px;
-    font-weight: bold;
+    padding: px;
+    /* font-weight: bold; */
 }
 .flexbox-blog .flexbox-blog-item h3{
     text-align: center;

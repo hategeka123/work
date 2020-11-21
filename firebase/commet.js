@@ -2,6 +2,11 @@
 
 const myForm = document.querySelector("#send");
 
+const commentbtn = document.querySelector("#loginComment")
+commentbtn.onclick = () =>{
+    window.location.href = './login.html'
+}
+
 const id = localStorage.getItem('blogId')
 console.log(window.location.href)
 const arrayId = window.location.href.split('/').slice('-1').pop()
@@ -21,7 +26,6 @@ console.log(blogContainer)
 blogContainer.innerHTML= `<img src="${result.imageref}" alt="startups.jpg" id="blogImage">
 <h3>${result.title}</h3>
 <p id="description">
-
 ${result.description}
 </p>`
 console.log('retreived da',result)
@@ -70,16 +74,24 @@ function getcomment(){
         <img src="../../image/image1.png">
         </div>
         <div class="commentArea">
-
         <h3>${comment.data().UserName}<span>Created_at: ${dateResult}</span> </h3>
         <p>${comment.data().Description}</p> 
         </div>`
         blogbox.appendChild(div)
     }))
 }
+function checkLogin(){
+    const form = document.querySelector(".form")
+    const user = localStorage.getItem('userEmail')
+    if(user){
+        form.style.display = 'block'
+        commentbtn.style.display = 'none'
+    }else{
+
+        commentbtn.style.display = 'block'
+    }
+}
 window.onload =() =>{
+    checkLogin()
     getcomment()
 }
-
-
-

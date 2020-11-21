@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
 </head>
 <body>
-    
     <!-- header -->
     <section id="header">
         <div class="header container">
@@ -18,63 +17,20 @@
                 <div class="nav-list">
                     <div class="hamburger"><div class="bar"></div></div>
                     <ul class="nav_link">
-                        <li><a href="#hero" data-after="Home" class="active-link">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html" data-after="About">About</a></li>
                         <!-- <li><a href="#skills" data-after="Skills">Skills</a></li> -->
+                        <!-- <li><a href="#proj" data-after="Projects">Projects</a></li> -->
+                        <li><a href="./contact.html" data-after="Contact" data-after="Home" class="active-link">Contact</a></li>
                         <li><a href="./blog.html" data-after="Blog">Blog</a></li>
                         <li><a href="./login.html" data-after="Login">Login</a></li>
-                        <li><a href="./signup.html" data-after="SignUp">SignUp</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <!-- end header -->
-    <!-- hero section -->
-    <section id="hero">
-        <div class="hero container">
-            <div class="info">
-                <h1>Hello, <span></span></h1>
-                <h1>My Name Is <span></span></h1>
-                <h1>J.Marie <span></span></h1>
-                <h1>Developer/Singer/Technician</h1>
-                <!-- <a href="./blog.html" type="button" class="cta">View my blog</a> -->
-            </div>
-            <div class="image">
-                <img src="./image/jmv.jpg" alt="profile image"> 
-            </div>
-        </div>
-    </section>
-    <!-- end hero section -->
-    <!-- Abbout section
-    <section id="projects">
-        <div class="projects container">
-            <div class="section-title">
-                <h1>About Me</h1>
-            </div>
-            <div class="pragra">
-                <h2>Who am I</h2>
-                <p>I’m full-stack web developer and ihave serious passion for 
-                    Technology,</p> 
-                <p>"I’m also postgraduate in" <span>Information System</span>.</p>
-                <p>Know many things about me, Look!</p>    
-            </div>
-
-            <h3> My skills</h3>
-            <div class="readSkill">
-
-                <div class="mySkill">
-
-                
-                </div>
-             
-            </div>   
-        </div>
-          
-    </section>
-   
-    project section
-    contact secton
+    <!-- contact secton -->
     <section id="contact">
         <div class="contacts">
             <h1>Contact Me</h1>
@@ -126,8 +82,9 @@
         <div class="social-media">
             
         </div>
-    </section> -->
+    </section>
     <!-- contact secton -->
+
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
@@ -138,5 +95,4 @@
     <script src="./firebase/getSkillsOnHome.js"></script>
     <script src="./app.js"></script>
 </body>
-
 </html>

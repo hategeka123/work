@@ -1,6 +1,3 @@
-// /----------------------------------- reading blogs ---------------------/
-
-
 const skill = document.querySelector(".mySkill");
 // console.log('get skills on home page')
 
