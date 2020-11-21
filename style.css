@@ -48,7 +48,7 @@ p{
 .section-title span{
     color: crimson;
 }
-.cta{
+/* .cta{
     display: inline-block;
     padding: 10px 30px;
     color: white;
@@ -64,7 +64,7 @@ p{
 .cta:hover{
     color: white;
     background-color: crimson;
-}
+} */
 .brand h1{
     font-size: 3rem;
     text-transform: uppercase;
@@ -218,8 +218,9 @@ p{
     background-position: top center;
     position: relative;
     z-index: -1;
-    /* background-color: black; */
-    padding: 10px;
+    /* padding: 10px; */
+    height: 20%;
+
 }
 
 #hero::after{
@@ -283,7 +284,7 @@ p{
 #hero h1:nth-child(3) span{
     animation-delay: 2.5s;
 }
-#hero .cta{
+/* #hero .cta{
     display: inline-block;
     padding: 10px 30px;
     color: white;
@@ -295,11 +296,11 @@ p{
     margin-top: 30px;
     transition: .3s ease;
     transition-property: background-color, color;
-}
-#hero .cta:hover{
+} */
+/* #hero .cta:hover{
     color: white;
     background-color: crimson;
-}
+} */
 /* end hero section */
 
 /*  project section */
@@ -312,7 +313,7 @@ p{
     padding: px 0;   */
 }
 #projects .projects .section-title{
-    margin-top: 40px;
+    margin-top: 90px;
 }
 #projects .projects .section-title h1{
     font-size: 3rem;
@@ -371,12 +372,16 @@ p{
 .Skills{
     display: flex;
     flex-direction: row;
-    height: 30vh;
-    width: 80vw;
+    height: 40vh;
+    width: 70vw;
     justify-content: center;
     align-items: center;
     border: 2px solid gray;
     margin-bottom: 20px;
+}
+.mySkill :hover{
+   transition: ease 0.8s;
+   transform: scale(1.05);
 }
 .skills_image img{
     width: 10vw;
@@ -384,21 +389,27 @@ p{
     margin-left: 30px;
 
 }
+.mySkill p{
+    width: 90%;
+    font-size: 2rem;
+    margin-left: 20px;
+}
 .detail_skill{
    margin-left: 40px;
 }
 .projects h3{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     border-bottom: 2px solid blanchedalmond;
 }
 .projects h2{
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 .detail_skill p{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    
 }
 /* End proj section  */
 
@@ -491,11 +502,12 @@ p{
     text-align: center;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
     
 }
 .contact-social-media img{
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 20px;
     width: 40px;
     height: 40px;
@@ -503,8 +515,8 @@ p{
     transition: .7s ease;
 }
 .contact-social-media :hover{
-    transform: scale(2.2);
-    transition: ease 0.2s;
+    transform: scale(1.7);
+    transition: ease 0.7s;
 }
 .contact-form #error_message{
     margin-bottom: 20px;
@@ -513,6 +525,10 @@ p{
     text-align: center;
     font-size: 14px;
     transition: all 0.5s ease;
+}
+.act{
+
+    font-size: 2rem;
 }
 /* End contact section */
 
@@ -566,6 +582,7 @@ p{
         display: flex;
         flex-direction: column;
         padding-top: 75%;
+        padding-bottom: 75%;
     }
     #hero h1{
         display: block;

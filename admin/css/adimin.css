@@ -16,7 +16,7 @@ body{
     flex-direction: row;
 }
 .admin-wrapper .left-sidebar{
-    padding-top: 100px;
+    padding-top: 90px;
     height: 1000px;
     width: 250px;
     background-color: gray
@@ -36,28 +36,28 @@ body{
     background: darkgrey;
 }
 .admin-wrapper .admin-content{
-    padding-top: 90px;
+    padding: 90px;
     padding-left: 40px;
+    margin-left: 50px;
     height: 1000px;
     width: 100%;
     right: 0;
     overflow-y: scroll;
 }
 .btn{
-    padding-top: 10px;
+    padding: 10px;
     margin-top: 10px;
+    margin-left: 20px;
     width: 100px;
     font-size: 2rem;
-    background-color: gray;
-    /* margin-left: 10px; */
-    /* border-radius: 2px; */
+    border-radius: 2px;
+    background-color: lightgreen;
+  
 }
 .btn:hover{
-    background-color: darkgray;
+    background-color: cornsilk;
 }
-.btn{
-    color: cornsilk;
-}
+
 .content{
     margin-left: 20px;
     margin-right: 20px;
@@ -73,11 +73,13 @@ table{
     width: 100%;
     border-collapse: collapse;
     font-size: 2rem;
+    /* color: red; */
 }
 th, td{
-    padding: 10px;
+    /* padding: 10px; */
     text-align: left;
     border-bottom: 1px solid black;
+    
 }
 
 
@@ -153,7 +155,22 @@ form input[type="file"]{
     position: relative;
     align-items: center;
     border-bottom: 2px solid gray;
+    justify-content: space-around;
     
+    
+}
+.costom p{
+    width: 500px;
+}
+.logout{
+    color: whitesmoke;
+    font-size: 3rem;
+    cursor: pointer;
+
+
+}
+.logout:hover{
+    color: crimson;
 }
 
 .detail{
@@ -181,6 +198,7 @@ form input[type="file"]{
 .button{
     display: flex;
     justify-content: space-between;
+    /* padding-top: 400px; */
     /* position: relative; */
     font-size: 25px;
     /* margin-top: 2vh; */
@@ -197,10 +215,14 @@ form input[type="file"]{
     color: tomato;
 }
 
-.button #edt{
+.button #edits{
 
     color: gray;
+    padding-bottom: 250px;
+    
 }
-.button #dlt{
+.button #delete{
     color: tomato;
+    padding-top: 250px;
+    margin-right: 10px;
 }

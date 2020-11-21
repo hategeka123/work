@@ -49,19 +49,7 @@ p{
 .section-title span{
     color: crimson;
 }
-.cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid crimson;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-}
+
 .cta:hover{
     color: white; 
     background-color: crimson;
@@ -211,13 +199,11 @@ p{
     text-align: center;
     color: blue;
     margin-bottom: 20px;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .flexbox-blog {
     display: flex;
     flex-direction: row;
-    /* margin-left: 20%; */
-    /* margin-right: 10%; */
     margin: 30px;
     padding-left: 70px;
     flex-wrap: wrap;
@@ -225,36 +211,39 @@ p{
 .flexbox-blog .flexbox-blog-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
    height: 53vh;
    padding: 30px;
    width: 350px;
    border-radius: 15px;
    box-shadow: 2px 0px lavender;
    background-color: white;
-   margin-right: 50px;
+   margin-right: 85px;
    margin-top: 50px;
    transform: scale(1.1);
+   margin-bottom: 40px;
 
 }
-.flexbox-blog :hover{
+.flexbox-blog  :hover{
     
     transition: ease 0.7s;
    
-   transform: scale(1.1);
+   transform: scale(1.2);
 
 }
 .flexbox-blog .flexbox-blog-item img {
-    width: 300px;
-    height: 180px;
+    width: 250px;
+    height: 150px;
     align-self: center;
     padding: 2px;
-    padding-bottom: 20px;
+    justify-content: space-around;
+    /* padding-bottom: 5px; */
 }
 .flexbox-blog .flexbox-blog-item p {
     font-size: 2rem;
     margin-top: 5px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: px;
     /* font-weight: bold; */
 }
 .flexbox-blog .flexbox-blog-item h3{

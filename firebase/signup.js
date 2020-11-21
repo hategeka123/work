@@ -4,9 +4,9 @@ function signUp() {
 
     auth.createUserWithEmailAndPassword(email.value, password.value,)
     .then(()=>{
-        window.location = "./../admin/profile/profile.html"
+        window.location = "./admin/profile/profile.html"
     })
-    .catch(e => alert(e.massage));
+    .catch(e => console.log(e.massage));
     
 }
 const signUpForm = document.querySelector(".signup");
