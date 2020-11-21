@@ -95,5 +95,3 @@ window.onload =() =>{
     checkLogin()
     getcomment()
 }
-
-

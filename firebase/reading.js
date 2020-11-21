@@ -4,9 +4,7 @@ const blog = document.querySelector(".flexbox-blog");
 
 firebase.firestore().collection("blogs").get().then((blogs) =>{
     blogs.forEach((doc) => {
-// let myBlogs = document.createElement("div");
-
-
+let myBlogs = document.createElement("div");
 let date = doc.data().created_at.toDate()
 let dateObject = new Date(date)
 let month = dateObject.toLocaleString('en-GB',{month: 'short'});

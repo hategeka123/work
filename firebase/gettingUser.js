@@ -1,3 +1,4 @@
+
 const userName = document.querySelector(".name")
 const userRole = document.querySelector(".role")
 const table = document.querySelector(".thead-inverse")
@@ -35,4 +36,3 @@ function deleteBlog(){
 // function deleteContact(){
 //     const userId = event.target.parentNode.parentNode
 //     console.log(userId)
-// }
