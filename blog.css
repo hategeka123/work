@@ -236,7 +236,7 @@ p{
    transform: scale(1.1);
 
 }
-.flexbox-blog .flexbox-blog-item :hover{
+.flexbox-blog :hover{
     
     transition: ease 0.7s;
    
@@ -255,7 +255,7 @@ p{
     margin-top: 5px;
     margin-bottom: 20px;
     padding: 10px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .flexbox-blog .flexbox-blog-item h3{
     text-align: center;

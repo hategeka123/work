@@ -53,7 +53,10 @@ body{
     /* border-radius: 2px; */
 }
 .btn:hover{
-    background-color: cornsilk;
+    background-color: darkgray;
+}
+.btn{
+    color: cornsilk;
 }
 .content{
     margin-left: 20px;
