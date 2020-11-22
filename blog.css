@@ -4,19 +4,18 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: whitesmoke;
-    padding-top: 11vh;
-}
 html{
     font-size: 10px;
     font-family: 'montserrat', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
 }
 a{
     text-decoration: none;
 }
 .container{
-    
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -49,11 +48,23 @@ p{
 .section-title span{
     color: crimson;
 }
-
-.cta:hover{
-    color: white; 
-    background-color: crimson;
+/* .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 3px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
 }
+.cta:hover{
+    color: white;
+    background-color: crimson;
+} */
 .brand h1{
     font-size: 3rem;
     text-transform: uppercase;
@@ -80,6 +91,7 @@ p{
     width: 100%;
     background-color: rgba(31, 30, 30, 0.24);
     transition: .3s ease background-color;
+    z-index: 500;
 }
 #header .nav-bar{
     display: flex;
@@ -96,22 +108,22 @@ p{
     background-color: rgb(31, 30, 30);
     width: 100vw;
     height: 100vh;
-    left: 100%;   
+    left: 100%;
     top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 150;
     overflow: hidden;
     transition: .5s ease left;
+}
+#header .nav-list ul.active{
+    left: 0;
 }
 #header .nav-list ul li a.active-link{
     color: brown;
 }
-#header .nav-list ul.active{
-    left: 0;
-} 
 #header .nav-list ul a{
     font-size: 2.5rem;
     font-weight: 500;
@@ -120,9 +132,10 @@ p{
     color: white;
     padding: 20px;
     display: block;
+    z-index: 1;
 }
- #header .nav-list ul a::after {
-    content: attr(data-after );
+#header .nav-list ul a::after {
+    content: attr(data-after);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -135,7 +148,8 @@ p{
 }
 #header .nav-list ul li:hover a::after{
     transform: translate(-50%, -50%) scale(1);
-    letter-spacing: initial;  
+    letter-spacing: initial;
+      
 }
 #header .nav-list ul li:hover a{
     color: crimson;
@@ -153,7 +167,7 @@ p{
     z-index: 100;
     cursor: pointer;
     transform: scale(.8);
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 #header .hamburger::after{
     position: absolute;
@@ -181,25 +195,28 @@ p{
     background-color: white;
     transition: .3s ease;
     transition-property: top, bottom;
-} 
+}
 #header .hamburger .bar::after{
     top: 8px;
 }
-#header .hamburger.active .bar::before{
+#header .hamburger .bar::before{
     bottom: 8px;
 }
+
 #header .hamburger.active .bar::before{
     bottom: 0;
 }
 #header .hamburger.active .bar::after{
     top: 0;
 }
- /* end of header */
+/* end header section */
+
  .title h1 {
     text-align: center;
     color: blue;
     margin-bottom: 20px;
     font-size: 3rem;
+    padding-top: 80px;
 }
 .flexbox-blog {
     display: flex;
@@ -216,7 +233,7 @@ p{
    padding: 30px;
    width: 350px;
    border-radius: 15px;
-   box-shadow: 2px 0px lavender;
+   box-shadow: 4px 4px 4px 4px lavender;
    background-color: white;
    margin-right: 85px;
    margin-top: 50px;
@@ -253,7 +270,13 @@ p{
     font-weight: bold;
     font-size: 2rem;
 }
+span span{
+    margin-left: 50px;
+}
+span strong{
 
+    margin-left: 10px;
+}
  /* key frame */
  @keyframes hamburger_puls{
     0%{
