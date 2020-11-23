@@ -130,11 +130,11 @@ form {
 }
 
 #update {
-    width: 40%;
-    height: 10%;
-    border-radius: 5px;
-    background-color: rgb(42, 122, 46);
-    color: white;
+    /* width: 40%;
+    height: 10%; */
+    /* border-radius: 5px; */
+    /* background-color: rgb(42, 122, 46); */
+    color: gray;
     border-width: 0px;
     margin-left: 1.5em;
     margin-top: 2em;
@@ -172,3 +172,12 @@ form {
 .userheader .table td {
     padding:20px;   
   }
+
+ #info{
+     height: 30px;
+     color: green;
+     padding-right: 20px;
+ }
+ select{
+     margin-left: 40px;
+ }

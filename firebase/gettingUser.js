@@ -1,12 +1,10 @@
 
 const userName = document.querySelector(".name")
 const userRole = document.querySelector(".role")
+const profile = document.querySelector(".profile")
+console.log(profile)
 const table = document.querySelector(".thead-inverse")
 console.log("jmv")
-console.log(table)
-// thead-inverse
-// tdata
-// console.log(user)
 firebase.firestore().collection("Users").get().then((Users) =>{
     Users.forEach((doc) =>{
         const id = doc.id
@@ -16,7 +14,12 @@ firebase.firestore().collection("Users").get().then((Users) =>{
         const row = `<tbody class="tdata" id="${doc.id}">
         <td id="titleTask"> ${doc.data().name}</td>
         <td id="categoryTask"> ${doc.data().userRole}</td>
-        <td id="statusTask"><i onclick="deleteBlog()" class="fas fa-trash-alt" id = "dt"></i></td>
+        <td id="statusTask"><i onclick="deleteBlog()" class="fas fa-trash-alt" id = "dt"></i>
+        <select id="info" name="carlist" form="carform">
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+        </select>
+        </td>
         </tr>
         </tbody>`;
         table.innerHTML +=row
