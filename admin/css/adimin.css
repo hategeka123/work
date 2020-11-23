@@ -51,7 +51,7 @@ body{
     width: 100px;
     font-size: 2rem;
     border-radius: 2px;
-    background-color: lightgreen;
+    background-color: gray;
   
 }
 .btn:hover{
@@ -197,12 +197,14 @@ form input[type="file"]{
 }
 .button{
     display: flex;
-    justify-content: space-between;
-    /* padding-top: 400px; */
-    /* position: relative; */
+    /* justify-content: space-between; */
     font-size: 25px;
-    /* margin-top: 2vh; */
-    /* align-items: flex-end; */
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    
 
 }
 .button #bt {
@@ -213,16 +215,22 @@ form input[type="file"]{
 .button #dt {
 
     color: tomato;
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 .button #edits{
-
+    
     color: gray;
+    padding-top: 50px;
     padding-bottom: 250px;
     
 }
+
 .button #delete{
     color: tomato;
     padding-top: 250px;
+    padding-bottom: 40px;
     margin-right: 10px;
+    cursor: pointer;
 }

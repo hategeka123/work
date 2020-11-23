@@ -26,7 +26,7 @@ firebase.firestore().collection("skills").doc(idArray).get().then((data) =>{
     <textarea placeholder="Enter Massege" id="description">${result.description}</textarea>
 </div>
 <div>
-    <button type="submit" class="btn btn-big">submit</button>
+    <button type="submit" class="btn btn-big">Save change</button>
 </div>
     
     `

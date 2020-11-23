@@ -4,13 +4,9 @@ const userRole = document.querySelector(".role")
 const profile = document.querySelector(".profile")
 console.log(profile)
 const table = document.querySelector(".thead-inverse")
-console.log("jmv")
 firebase.firestore().collection("Users").get().then((Users) =>{
     Users.forEach((doc) =>{
         const id = doc.id
-        // console.log(id)
-        // console.log(doc.data())
-        
         const row = `<tbody class="tdata" id="${doc.id}">
         <td id="titleTask"> ${doc.data().name}</td>
         <td id="categoryTask"> ${doc.data().userRole}</td>
@@ -23,15 +19,14 @@ firebase.firestore().collection("Users").get().then((Users) =>{
         </tr>
         </tbody>`;
         table.innerHTML +=row
-console.log(row.id)        
+// console.log(row.id)        
     })
 })
 
 function deleteBlog(){
-    const mydi = event.target.parentElement.parentNode.class
+    const mydi = event.target.parentElement.parentNode.id
     console.log(mydi)
-    // firebase.firestore().collection("Users").doc().delete();
-    // console.log(userId)
+    firebase.firestore().collection("Users").doc(mydi).delete();
     alert("Deleted successfully!!!")
 }
 // ----------------------------------- delete user------------------------------------------------

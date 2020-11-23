@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=montserrat:300,400,700&display=swap');
+
+.userProfile{
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.userContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   height: 150vh;
+   width: 80vw;
+   border-radius: 15px;
+   box-shadow: 4px 4px 4px 4px lavender;
+   background-color: gray;
+   transform: scale(1.1);
+   /* margin-bottom: 40px; */
+}
+.userProfile .MyProfile img{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    margin-right: 10000px;
+
+}

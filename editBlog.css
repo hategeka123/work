@@ -54,3 +54,6 @@ textarea{
     border: 1px solid lightgray;
     border-radius: 20px;
 }
+button {
+    cursor: pointer;
+}
