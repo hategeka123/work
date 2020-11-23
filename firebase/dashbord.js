@@ -20,7 +20,7 @@ const blogDiv = `<div class="flexbox-blog-item" id=${doc.id}>
                 <img src="${doc.data().imageref}">
                 
                 <a href="/commet.html#/${doc.id}"><h3>${doc.data().title}</h3></a>
-                <span>${dateResult}</span> 
+                <span><strong>JMV</strong><span>${dateResult}</span></span> 
                 <p>
                 ${doc.data().description.substring(0, 50)}...
                 </p>

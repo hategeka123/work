@@ -45,7 +45,8 @@ myForm.addEventListener('submit', (e) => {
     await firebase.firestore().collection('blogs').add(article);
                  console.log(article)
                  console.log(downloadURL)
-               alert(" Article successfully Uploaded");
+              //  alert(" Article successfully Uploaded");
+              document.getElementById("seccessfully").innerHTML='Article successfully Uploaded'
                myForm.reset()
               //  window.location.replace("./blog.html");
     })
